@@ -1,0 +1,5 @@
+2022-12-27 11:13:20,394 INFO [main] i.g.j.c.c.LoggerTest [StartupInfoLogger.java:51] Starting LoggerTest using Java 17.0.1 with PID 14465 (started by apple in /Users/apple/Desktop/JavaCommunity/community)
+2022-12-27 11:13:20,396 INFO [main] i.g.j.c.c.LoggerTest [SpringApplication.java:630] No active profile set, falling back to 1 default profile: "default"
+2022-12-27 11:13:21,995 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:56] Adding welcome page template: index
+2022-12-27 11:13:22,262 INFO [main] i.g.j.c.c.LoggerTest [StartupInfoLogger.java:57] Started LoggerTest in 2.197 seconds (process running for 3.237)
+2022-12-27 11:13:22,614 INFO [main] i.g.j.c.c.LoggerTest [LoggerTest.java:18] info Log

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Teacher</title>
+</head>
+<body>
+    <p th:text="${name}"></p>
+    <p th:text="${age}"></p>
+</body>
+</html>
+
+<li class="media pb-3 pt-3 mb-3 border-bottom" th:each="map:${discussPosts}}">
+    <a href="site/profile.html">
+        <img th:src="${map.user.headerURL}" class="mr-4 rounded-circle" alt="User Profile Picture" style="width:50px;height:50px;" src="">
+    </a>
+    <div class="media-body">
+        <h6 class="mt-0 mb-3">
+            <a href="#" th:utext="${map.post.title}"></a>
+            <span class="badge badge-secondary bg-primary" th:if="${map.post.type==1}">Top Post</span>
+            <span class="badge badge-secondary bg-danger" th:if="${map.post.status==1}">Featured Post</span>
+        </h6>
+        <div class="text-muted font-size-12">
+            <u class="mr-3" th:utext="${map.user.username}"></u> posted on <b th:text="${map.post.createTime}"></b>
+            <ul class="d-inline float-right">
+                <li class="d-inline ml-2">Like 11</li>
+                <li class="d-inline ml-2">|</li>
+                <li class="d-inline ml-2">Reply 7</li>
+            </ul>
+        </div>
+    </div>
+</li>
