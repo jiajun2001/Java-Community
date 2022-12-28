@@ -1,5 +1,84 @@
-2022-12-27 11:13:20,394 INFO [main] i.g.j.c.c.LoggerTest [StartupInfoLogger.java:51] Starting LoggerTest using Java 17.0.1 with PID 14465 (started by apple in /Users/apple/Desktop/JavaCommunity/community)
-2022-12-27 11:13:20,396 INFO [main] i.g.j.c.c.LoggerTest [SpringApplication.java:630] No active profile set, falling back to 1 default profile: "default"
-2022-12-27 11:13:21,995 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:56] Adding welcome page template: index
-2022-12-27 11:13:22,262 INFO [main] i.g.j.c.c.LoggerTest [StartupInfoLogger.java:57] Started LoggerTest in 2.197 seconds (process running for 3.237)
-2022-12-27 11:13:22,614 INFO [main] i.g.j.c.c.LoggerTest [LoggerTest.java:18] info Log
+2022-12-28 08:33:47,462 INFO [main] i.g.j.c.c.MailTests [StartupInfoLogger.java:51] Starting MailTests using Java 17.0.1 with PID 22845 (started by apple in /Users/apple/Desktop/JavaCommunity/community)
+2022-12-28 08:33:47,470 INFO [main] i.g.j.c.c.MailTests [SpringApplication.java:630] No active profile set, falling back to 1 default profile: "default"
+2022-12-28 08:33:49,449 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:56] Adding welcome page template: index
+2022-12-28 08:33:49,719 INFO [main] i.g.j.c.c.MailTests [StartupInfoLogger.java:57] Started MailTests in 2.845 seconds (process running for 4.449)
+2022-12-28 09:53:58,687 INFO [main] i.g.j.c.c.MailTests [StartupInfoLogger.java:51] Starting MailTests using Java 17.0.1 with PID 23072 (started by apple in /Users/apple/Desktop/JavaCommunity/community)
+2022-12-28 09:53:58,689 INFO [main] i.g.j.c.c.MailTests [SpringApplication.java:630] No active profile set, falling back to 1 default profile: "default"
+2022-12-28 09:54:00,634 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:56] Adding welcome page template: index
+2022-12-28 09:54:00,937 INFO [main] i.g.j.c.c.MailTests [StartupInfoLogger.java:57] Started MailTests in 2.607 seconds (process running for 3.853)
+2022-12-28 09:55:19,128 INFO [main] i.g.j.c.c.MailTests [StartupInfoLogger.java:51] Starting MailTests using Java 17.0.1 with PID 23085 (started by apple in /Users/apple/Desktop/JavaCommunity/community)
+2022-12-28 09:55:19,130 INFO [main] i.g.j.c.c.MailTests [SpringApplication.java:630] No active profile set, falling back to 1 default profile: "default"
+2022-12-28 09:55:20,380 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:56] Adding welcome page template: index
+2022-12-28 09:55:20,564 INFO [main] i.g.j.c.c.MailTests [StartupInfoLogger.java:57] Started MailTests in 1.837 seconds (process running for 2.908)
+2022-12-28 09:56:10,066 INFO [main] i.g.j.c.c.MailTests [StartupInfoLogger.java:51] Starting MailTests using Java 17.0.1 with PID 23096 (started by apple in /Users/apple/Desktop/JavaCommunity/community)
+2022-12-28 09:56:10,069 INFO [main] i.g.j.c.c.MailTests [SpringApplication.java:630] No active profile set, falling back to 1 default profile: "default"
+2022-12-28 09:56:11,814 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:56] Adding welcome page template: index
+2022-12-28 09:56:12,164 INFO [main] i.g.j.c.c.MailTests [StartupInfoLogger.java:57] Started MailTests in 2.612 seconds (process running for 3.718)
+2022-12-28 09:57:09,349 INFO [main] i.g.j.c.c.MailTests [StartupInfoLogger.java:51] Starting MailTests using Java 17.0.1 with PID 23114 (started by apple in /Users/apple/Desktop/JavaCommunity/community)
+2022-12-28 09:57:09,352 INFO [main] i.g.j.c.c.MailTests [SpringApplication.java:630] No active profile set, falling back to 1 default profile: "default"
+2022-12-28 09:57:10,620 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:56] Adding welcome page template: index
+2022-12-28 09:57:10,789 INFO [main] i.g.j.c.c.MailTests [StartupInfoLogger.java:57] Started MailTests in 1.779 seconds (process running for 2.709)
+2022-12-28 10:09:52,440 INFO [main] i.g.j.c.c.MailTests [StartupInfoLogger.java:51] Starting MailTests using Java 17.0.1 with PID 23380 (started by apple in /Users/apple/Desktop/JavaCommunity/community)
+2022-12-28 10:09:52,442 INFO [main] i.g.j.c.c.MailTests [SpringApplication.java:630] No active profile set, falling back to 1 default profile: "default"
+2022-12-28 10:09:53,700 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:56] Adding welcome page template: index
+2022-12-28 10:09:53,868 INFO [main] i.g.j.c.c.MailTests [StartupInfoLogger.java:57] Started MailTests in 1.781 seconds (process running for 2.799)
+2022-12-28 10:31:23,641 INFO [main] i.g.j.c.c.MailTests [StartupInfoLogger.java:51] Starting MailTests using Java 17.0.1 with PID 23768 (started by apple in /Users/apple/Desktop/JavaCommunity/community)
+2022-12-28 10:31:23,643 INFO [main] i.g.j.c.c.MailTests [SpringApplication.java:630] No active profile set, falling back to 1 default profile: "default"
+2022-12-28 10:31:25,011 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:56] Adding welcome page template: index
+2022-12-28 10:31:25,369 INFO [main] i.g.j.c.c.MailTests [StartupInfoLogger.java:57] Started MailTests in 2.094 seconds (process running for 3.116)
+2022-12-28 10:33:06,975 INFO [main] i.g.j.c.c.MailTests [StartupInfoLogger.java:51] Starting MailTests using Java 17.0.1 with PID 23787 (started by apple in /Users/apple/Desktop/JavaCommunity/community)
+2022-12-28 10:33:06,976 INFO [main] i.g.j.c.c.MailTests [SpringApplication.java:630] No active profile set, falling back to 1 default profile: "default"
+2022-12-28 10:33:08,481 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:56] Adding welcome page template: index
+2022-12-28 10:33:08,652 INFO [main] i.g.j.c.c.MailTests [StartupInfoLogger.java:57] Started MailTests in 2.096 seconds (process running for 3.174)
+2022-12-28 10:37:56,392 INFO [main] i.g.j.c.c.MailTests [StartupInfoLogger.java:51] Starting MailTests using Java 17.0.1 with PID 23885 (started by apple in /Users/apple/Desktop/JavaCommunity/community)
+2022-12-28 10:37:56,394 INFO [main] i.g.j.c.c.MailTests [SpringApplication.java:630] No active profile set, falling back to 1 default profile: "default"
+2022-12-28 10:37:57,637 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:56] Adding welcome page template: index
+2022-12-28 10:37:57,821 INFO [main] i.g.j.c.c.MailTests [StartupInfoLogger.java:57] Started MailTests in 1.764 seconds (process running for 2.662)
+2022-12-28 10:38:12,191 INFO [main] i.g.j.c.c.MailTests [StartupInfoLogger.java:51] Starting MailTests using Java 17.0.1 with PID 23896 (started by apple in /Users/apple/Desktop/JavaCommunity/community)
+2022-12-28 10:38:12,193 INFO [main] i.g.j.c.c.MailTests [SpringApplication.java:630] No active profile set, falling back to 1 default profile: "default"
+2022-12-28 10:38:13,454 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:56] Adding welcome page template: index
+2022-12-28 10:38:13,631 INFO [main] i.g.j.c.c.MailTests [StartupInfoLogger.java:57] Started MailTests in 1.781 seconds (process running for 2.782)
+2022-12-28 10:40:25,607 INFO [main] i.g.j.c.c.MailTests [StartupInfoLogger.java:51] Starting MailTests using Java 17.0.1 with PID 23915 (started by apple in /Users/apple/Desktop/JavaCommunity/community)
+2022-12-28 10:40:25,608 INFO [main] i.g.j.c.c.MailTests [SpringApplication.java:630] No active profile set, falling back to 1 default profile: "default"
+2022-12-28 10:40:26,849 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:56] Adding welcome page template: index
+2022-12-28 10:40:27,032 INFO [main] i.g.j.c.c.MailTests [StartupInfoLogger.java:57] Started MailTests in 1.75 seconds (process running for 2.644)
+2022-12-28 10:42:04,728 INFO [main] i.g.j.c.c.MailTests [StartupInfoLogger.java:51] Starting MailTests using Java 17.0.1 with PID 23956 (started by apple in /Users/apple/Desktop/JavaCommunity/community)
+2022-12-28 10:42:04,730 INFO [main] i.g.j.c.c.MailTests [SpringApplication.java:630] No active profile set, falling back to 1 default profile: "default"
+2022-12-28 10:42:06,410 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:56] Adding welcome page template: index
+2022-12-28 10:42:06,634 INFO [main] i.g.j.c.c.MailTests [StartupInfoLogger.java:57] Started MailTests in 2.289 seconds (process running for 3.485)
+2022-12-28 10:43:26,070 INFO [main] i.g.j.c.c.MailTests [StartupInfoLogger.java:51] Starting MailTests using Java 17.0.1 with PID 23976 (started by apple in /Users/apple/Desktop/JavaCommunity/community)
+2022-12-28 10:43:26,072 INFO [main] i.g.j.c.c.MailTests [SpringApplication.java:630] No active profile set, falling back to 1 default profile: "default"
+2022-12-28 10:43:27,912 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:56] Adding welcome page template: index
+2022-12-28 10:43:28,183 INFO [main] i.g.j.c.c.MailTests [StartupInfoLogger.java:57] Started MailTests in 2.459 seconds (process running for 3.333)
+2022-12-28 10:43:39,539 INFO [main] i.g.j.c.c.MailTests [StartupInfoLogger.java:51] Starting MailTests using Java 17.0.1 with PID 23981 (started by apple in /Users/apple/Desktop/JavaCommunity/community)
+2022-12-28 10:43:39,541 INFO [main] i.g.j.c.c.MailTests [SpringApplication.java:630] No active profile set, falling back to 1 default profile: "default"
+2022-12-28 10:43:40,800 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:56] Adding welcome page template: index
+2022-12-28 10:43:40,979 INFO [main] i.g.j.c.c.MailTests [StartupInfoLogger.java:57] Started MailTests in 1.769 seconds (process running for 2.626)
+2022-12-28 10:45:46,716 INFO [main] i.g.j.c.c.MailTests [StartupInfoLogger.java:51] Starting MailTests using Java 17.0.1 with PID 24015 (started by apple in /Users/apple/Desktop/JavaCommunity/community)
+2022-12-28 10:45:46,721 INFO [main] i.g.j.c.c.MailTests [SpringApplication.java:630] No active profile set, falling back to 1 default profile: "default"
+2022-12-28 10:45:48,181 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:56] Adding welcome page template: index
+2022-12-28 10:45:48,393 INFO [main] i.g.j.c.c.MailTests [StartupInfoLogger.java:57] Started MailTests in 2.08 seconds (process running for 3.115)
+2022-12-28 10:46:50,455 INFO [main] i.g.j.c.c.MailTests [StartupInfoLogger.java:51] Starting MailTests using Java 17.0.1 with PID 24030 (started by apple in /Users/apple/Desktop/JavaCommunity/community)
+2022-12-28 10:46:50,457 INFO [main] i.g.j.c.c.MailTests [SpringApplication.java:630] No active profile set, falling back to 1 default profile: "default"
+2022-12-28 10:46:51,728 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:56] Adding welcome page template: index
+2022-12-28 10:46:51,915 INFO [main] i.g.j.c.c.MailTests [StartupInfoLogger.java:57] Started MailTests in 1.805 seconds (process running for 2.674)
+2022-12-28 10:48:46,651 INFO [main] i.g.j.c.c.MailTests [StartupInfoLogger.java:51] Starting MailTests using Java 17.0.1 with PID 24055 (started by apple in /Users/apple/Desktop/JavaCommunity/community)
+2022-12-28 10:48:46,654 INFO [main] i.g.j.c.c.MailTests [SpringApplication.java:630] No active profile set, falling back to 1 default profile: "default"
+2022-12-28 10:48:48,286 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:56] Adding welcome page template: index
+2022-12-28 10:48:48,535 INFO [main] i.g.j.c.c.MailTests [StartupInfoLogger.java:57] Started MailTests in 2.255 seconds (process running for 3.533)
+2022-12-28 10:48:55,336 INFO [main] i.g.j.c.c.MailTests [StartupInfoLogger.java:51] Starting MailTests using Java 17.0.1 with PID 24060 (started by apple in /Users/apple/Desktop/JavaCommunity/community)
+2022-12-28 10:48:55,337 INFO [main] i.g.j.c.c.MailTests [SpringApplication.java:630] No active profile set, falling back to 1 default profile: "default"
+2022-12-28 10:48:56,563 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:56] Adding welcome page template: index
+2022-12-28 10:48:56,738 INFO [main] i.g.j.c.c.MailTests [StartupInfoLogger.java:57] Started MailTests in 1.743 seconds (process running for 2.627)
+2022-12-28 10:49:11,843 INFO [main] i.g.j.c.c.MailTests [StartupInfoLogger.java:51] Starting MailTests using Java 17.0.1 with PID 24065 (started by apple in /Users/apple/Desktop/JavaCommunity/community)
+2022-12-28 10:49:11,844 INFO [main] i.g.j.c.c.MailTests [SpringApplication.java:630] No active profile set, falling back to 1 default profile: "default"
+2022-12-28 10:49:13,099 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:56] Adding welcome page template: index
+2022-12-28 10:49:13,286 INFO [main] i.g.j.c.c.MailTests [StartupInfoLogger.java:57] Started MailTests in 1.788 seconds (process running for 2.607)
+2022-12-28 10:56:40,668 INFO [main] i.g.j.c.c.MailTests [StartupInfoLogger.java:51] Starting MailTests using Java 17.0.1 with PID 24142 (started by apple in /Users/apple/Desktop/JavaCommunity/community)
+2022-12-28 10:56:40,673 INFO [main] i.g.j.c.c.MailTests [SpringApplication.java:630] No active profile set, falling back to 1 default profile: "default"
+2022-12-28 10:56:41,929 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:56] Adding welcome page template: index
+2022-12-28 10:56:42,115 INFO [main] i.g.j.c.c.MailTests [StartupInfoLogger.java:57] Started MailTests in 1.844 seconds (process running for 2.7)
+2022-12-28 11:34:00,958 INFO [main] i.g.j.c.c.MailTests [StartupInfoLogger.java:51] Starting MailTests using Java 17.0.1 with PID 24260 (started by apple in /Users/apple/Desktop/JavaCommunity/community)
+2022-12-28 11:34:00,960 INFO [main] i.g.j.c.c.MailTests [SpringApplication.java:630] No active profile set, falling back to 1 default profile: "default"
+2022-12-28 11:34:02,412 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:56] Adding welcome page template: index
+2022-12-28 11:34:02,597 INFO [main] i.g.j.c.c.MailTests [StartupInfoLogger.java:57] Started MailTests in 2.043 seconds (process running for 2.989)
