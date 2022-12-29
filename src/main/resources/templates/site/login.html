@@ -7,7 +7,7 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" crossorigin="anonymous">
 	<link rel="stylesheet" th:href="@{/css/global.css}" />
 	<link rel="stylesheet" th:href="@{/css/login.css}" />
-	<title>牛客网-登录</title>
+	<title>Adelaide CS Community - Login</title>
 </head>
 <body>
 	<div class="nk-container">
@@ -65,48 +65,48 @@
 				<h3 class="text-center text-info border-bottom pb-3">Login</h3>
 				<form class="mt-5">				
 					<div class="form-group row">
-						<label for="username" class="col-sm-2 col-form-label text-right">账号:</label>
+						<label for="username" class="col-sm-2 col-form-label text-right">Account:</label>
 						<div class="col-sm-10">
-							<input type="text" class="form-control is-invalid" id="username" placeholder="请输入您的账号!" required>
+							<input type="text" class="form-control is-invalid" id="username" placeholder="Please enter your account!" required>
 							<div class="invalid-feedback">
 								该账号不存在!
 							</div>
 						</div>
 					</div>
 					<div class="form-group row mt-4">
-						<label for="password" class="col-sm-2 col-form-label text-right">密码:</label>
+						<label for="password" class="col-sm-2 col-form-label text-right">Password:</label>
 						<div class="col-sm-10">
-							<input type="password" class="form-control is-invalid" id="password" placeholder="请输入您的密码!" required>
+							<input type="password" class="form-control is-invalid" id="password" placeholder="Please enter in your password!" required>
 							<div class="invalid-feedback">
 								密码长度不能小于8位!
 							</div>							
 						</div>
 					</div>
 					<div class="form-group row mt-4">
-						<label for="verifycode" class="col-sm-2 col-form-label text-right">验证码:</label>
+						<label for="verifycode" class="col-sm-2 col-form-label text-right">Captcha:</label>
 						<div class="col-sm-6">
-							<input type="text" class="form-control is-invalid" id="verifycode" placeholder="请输入验证码!">
+							<input type="text" class="form-control is-invalid" id="verifycode" placeholder="Please enter in the captcha!">
 							<div class="invalid-feedback">
 								验证码不正确!
 							</div>
 						</div>
 						<div class="col-sm-4">
-							<img th:src="@{/img/captcha.png}" style="width:100px;height:40px;" class="mr-2"/>
-							<a href="javascript:;" class="font-size-12 align-bottom">刷新验证码</a>
+							<img th:src="@{/kaptcha}" id="kaptcha" style="width:100px;height:40px;" class="mr-2"/>
+							<a href="javascript:refresh_kaptcha();" class="font-size-12 align-bottom">Illegible?</a>
 						</div>
 					</div>				
 					<div class="form-group row mt-4">
 						<div class="col-sm-2"></div>
 						<div class="col-sm-10">
 							<input type="checkbox" id="remember-me" checked="checked">
-							<label class="form-check-label" for="remember-me">记住我</label>
-							<a href="forget.html" class="text-danger float-right">忘记密码?</a>
+							<label class="form-check-label" for="remember-me">Remember me</label>
+							<a href="forget.html" class="text-danger float-right">Forget password?</a>
 						</div>
 					</div>				
 					<div class="form-group row mt-4">
 						<div class="col-sm-2"></div>
 						<div class="col-sm-10 text-center">
-							<button type="submit" class="btn btn-info text-white form-control">立即登录</button>
+							<button type="submit" class="btn btn-info text-white form-control">Login</button>
 						</div>
 					</div>
 				</form>				
@@ -179,5 +179,11 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" crossorigin="anonymous"></script>
 	<script th:src="@{/js/global.js}"></script>
+	<script>
+		function refresh_kaptcha() {
+			var path = CONTEXT_PATH + "/kaptcha?p=" + Math.random();
+			$("#kaptcha").attr("src", path);
+		}
+	</script>
 </body>
 </html>
