@@ -1,20 +1,54 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="utf-8">
     <link rel="icon" href="https://static.nowcoder.com/images/logo_87_87.png"/>
-    <title>牛客网-激活账号</title>
+    <title>Adelaide CS Community - Activate your account</title>
 </head>
 <body>
-	<div>
-		<p>
-			<b>xxx@xxx.com</b>, 您好!
-		</p>
-		<p>
-			您正在注册牛客网, 这是一封激活邮件, 请点击 
-			<a href="#">http://www.nowcoder.com/activation/abcdefg123456.html</a>,
-			激活您的牛客账号!
-		</p>
-	</div>
+	<td align="center" style="font-family:Helvetica,arial,sans-serif; color:#333333; font-size:16px; font-weight:normal; border-collapse:collapse; background-color:#ffffff">
+		<table align="center" border="0" cellspacing="0" cellpadding="0" width="600" class="x_mobileContent">
+			<tbody>
+			<tr>
+				<td align="center" style="font-family:Helvetica,arial,sans-serif; color:#333333; font-size:16px; font-weight:normal; border-collapse:collapse; padding:20px">
+					<table align="center" cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#ffffff">
+						<tbody>
+						<tr>
+							<td style="font-family:Helvetica,arial,sans-serif; color:#000000; font-size:20px; font-weight:normal; border-collapse:collapse; text-align:center; padding-top:30px; padding-right:30px; padding-left:30px; padding-bottom:0px">
+
+							</td>
+						</tr>
+						<tr>
+							<td style="font-family:Helvetica,arial,sans-serif; color:#333333; font-size:20px; font-weight:normal; border-collapse:collapse; text-align:center; padding-top:0px; padding-right:30px; padding-left:30px; padding-bottom:0px">
+								<span data-markjs="true" class="markb5ml4dq6r uM2yb">Congratulations</span>!
+								<span data-markjs="true" class="markb5ml4dq6r uM2yb"><b th:text="${username}"></b></span>
+							</td>
+						</tr>
+						<tr>
+							<td style="font-family:Helvetica,arial,sans-serif; color:#333333; font-size:14px; font-weight:normal; border-collapse:collapse; text-align:center; padding-top:20px; padding-right:30px; padding-left:30px; padding-bottom:20px">You are registering Adelaide Computer Science Community<br aria-hidden="true">If you are not intended to receive this email, please ignore it</td>
+						</tr>
+						<tr>
+							<td style="">
+								<div style="text-align:center">
+									<a th:href="${url}" target="_blank" rel="noopener noreferrer" data-auth="NotApplicable" style="background-color:#8ac249; border-radius:0px; color:#ffffff; display:inline-block; line-height:40px; text-align:center; text-decoration:none!important; width:250px; padding-right:30px; padding-left:30px" data-safelink="true" data-linkindex="1">Verify my account</a>
+								</div>
+							</td>
+						</tr>
+						</tbody>
+					</table>
+				</td>
+			</tr>
+			<tr>
+				<td style="font-family:Helvetica,arial,sans-serif; color:#333333; font-size:14px; font-weight:normal; border-collapse:collapse; text-align:center; padding-top:20px; padding-right:30px; padding-left:30px; padding-bottom:30px">Kind Regards, <br aria-hidden="true"><br aria-hidden="true">Verification Team <br aria-hidden="true">Verification service powered by Spring Framework
+				</td>
+			</tr>
+			</tbody>
+		</table>
+		<table class="x_module" role="module" data-type="code" border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layout:fixed"><tbody><tr><td valign="top" class="x_footer-column" style="font-family:Helvetica,arial,sans-serif; color:#92929d; font-size:11px; font-weight:normal; border-collapse:collapse; text-align:center; padding:20px 50px; text-align:center"><span class="x_footer" style="font-family:Helvetica,arial,sans-serif; font-size:11px">You are receiving this email because you submitted a verification request with Adelaide CS Community<br aria-hidden="true">and its trusted partner, Spring. <br aria-hidden="true"><br aria-hidden="true">If you have been verified, please direct any and all questions about this offer to Adelaide CS Community.</span>
+		</td>
+		</tr>
+		</tbody>
+		</table>
+	</td>
 </body>
 </html>

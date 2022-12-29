@@ -26,10 +26,10 @@ public class MailTests {
     @Test
     public void testHTMLMail() {
         Context context = new Context();
-        context.setVariable("username", "Chan Jian Zhe");
+        context.setVariable("username", "Eugene Handsome Baby");
         String htmlString = templateEngine.process("/mail/demo", context);
         System.out.println(htmlString);
-        mailClient.sendMail("jiajun.yu@student.adelaide.edu.au", "Testing Email", htmlString);
+        mailClient.sendMail("chanjianzhe2002@gmail.com", "Replacement Exam", htmlString);
     }
 
 }
