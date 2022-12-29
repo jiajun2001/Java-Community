@@ -2,6 +2,7 @@ package io.github.jiajun2001.community.community.service;
 
 import io.github.jiajun2001.community.community.dao.UserMapper;
 import io.github.jiajun2001.community.community.entity.User;
+import io.github.jiajun2001.community.community.util.CommunityConstant;
 import io.github.jiajun2001.community.community.util.CommunityUtil;
 import io.github.jiajun2001.community.community.util.MailClient;
 import org.apache.commons.lang3.StringUtils;
@@ -17,7 +18,7 @@ import java.util.Map;
 import java.util.Random;
 
 @Service
-public class UserService {
+public class UserService implements CommunityConstant {
     @Autowired
     private UserMapper userMapper;
 
@@ -101,7 +102,17 @@ public class UserService {
         return map;
     }
 
-
+    public int activate(int userId, String code) {
+        User user = userMapper.selectById(userId);
+        if (user.getStatus() == 1) {
+            return ACTIVATION_REPEAT;
+        } else if (user.getActivationCode().equals(code)) {
+            userMapper.updateStatus(userId, 1);
+            return ACTIVATION_SUCCESS;
+        } else {
+            return ACTIVATION_FAIL;
+        }
+    }
 
 
 }
