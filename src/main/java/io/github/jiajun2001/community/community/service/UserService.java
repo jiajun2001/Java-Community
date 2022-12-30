@@ -1,6 +1,8 @@
 package io.github.jiajun2001.community.community.service;
 
+import io.github.jiajun2001.community.community.dao.LoginTicketMapper;
 import io.github.jiajun2001.community.community.dao.UserMapper;
+import io.github.jiajun2001.community.community.entity.LoginTicket;
 import io.github.jiajun2001.community.community.entity.User;
 import io.github.jiajun2001.community.community.util.CommunityConstant;
 import io.github.jiajun2001.community.community.util.CommunityUtil;
@@ -27,6 +29,9 @@ public class UserService implements CommunityConstant {
 
     @Autowired
     private TemplateEngine templateEngine;
+
+    @Autowired
+    private LoginTicketMapper loginTicketMapper;
 
     @Value("${community.path.domain}")
     private String domain;
@@ -112,6 +117,54 @@ public class UserService implements CommunityConstant {
         } else {
             return ACTIVATION_FAIL;
         }
+    }
+
+    public Map<String, Object> login(String username, String password, int expiredSeconds) {
+        Map<String, Object> map = new HashMap<>();
+
+        // Handle empty value
+        if (StringUtils.isBlank(username)) {
+            map.put("usernameMsg", "Account cannot be empty!");
+            return map;
+        }
+        if (StringUtils.isBlank(password)) {
+            map.put("passwordMsg", "Password cannot be empty!");
+            return map;
+        }
+
+        // Check the account
+        User user = userMapper.selectByName(username);
+        if (user == null) {
+            map.put("usernameMsg", "The account does not exist!");
+            return map;
+        }
+
+        // Check if the account is activated or not
+        if (user.getStatus() == 0) {
+            map.put("usernameMsg", "The account is not activated yet!");
+            return map;
+        }
+
+        // Check the password
+        password = CommunityUtil.md5(password + user.getSalt());
+        if (!user.getPassword().equals(password)) {
+            map.put("passwordMsg", "Password is incorrect!");
+            return map;
+        }
+
+        // Generate a session for the user
+        LoginTicket loginTicket = new LoginTicket();
+        loginTicket.setUserId(user.getId());
+        loginTicket.setTicket(CommunityUtil.generateUUID());
+        loginTicket.setStatus(0);
+        loginTicket.setExpired(new Date(System.currentTimeMillis() + expiredSeconds * 1000));
+        loginTicketMapper.insertLoginTicket(loginTicket);
+        map.put("ticket", loginTicket.getTicket());
+        return map;
+    }
+
+    public void logout(String ticket) {
+        loginTicketMapper.updateStatus(ticket, 1);
     }
 
 
