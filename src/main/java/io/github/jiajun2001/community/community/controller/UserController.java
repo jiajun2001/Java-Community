@@ -63,6 +63,18 @@ public class UserController {
             return "/site/setting";
         }
 
+        User user = hostHolder.getUser();
+
+        // Delete old profile picture
+        String oldHeaderURL = user.getHeaderURL();
+        String oldProfileImagePath = uploadPath + oldHeaderURL.substring(oldHeaderURL.lastIndexOf('/'));
+        File myObj = new File(oldProfileImagePath);
+        if (myObj.delete()) {
+            System.out.println("Deleted the file: " + myObj.getName());
+        } else {
+            System.out.println("Failed to delete the file.");
+        }
+
         fileName = CommunityUtil.generateUUID() + suffix;
         File dest = new File(uploadPath + "/" + fileName);
         try {
@@ -72,7 +84,6 @@ public class UserController {
             throw new RuntimeException("Fail to upload the file!", e);
         }
 
-        User user = hostHolder.getUser();
         String headerURL = domain + contextPath + "/user/header/" + fileName;
         userService.updateHeader(user.getId(), headerURL);
 
