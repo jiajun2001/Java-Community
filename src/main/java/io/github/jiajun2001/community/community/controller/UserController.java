@@ -1,10 +1,12 @@
 package io.github.jiajun2001.community.community.controller;
 
+import io.github.jiajun2001.community.community.annotation.LoginRequired;
 import io.github.jiajun2001.community.community.entity.User;
 import io.github.jiajun2001.community.community.service.UserService;
 import io.github.jiajun2001.community.community.util.CommunityUtil;
 import io.github.jiajun2001.community.community.util.HostHolder;
 import jakarta.servlet.http.HttpServletResponse;
+import lombok.extern.java.Log;
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -44,11 +46,13 @@ public class UserController {
     @Autowired
     private HostHolder hostHolder;
 
+    @LoginRequired
     @RequestMapping(path = "/setting", method = RequestMethod.GET)
     public String getSettingPage() {
         return "/site/setting";
     }
 
+    @LoginRequired
     @RequestMapping(path = "/upload", method = RequestMethod.POST)
     public String uploadHeader(MultipartFile headerImage, Model model) {
         if (headerImage == null) {
@@ -111,6 +115,7 @@ public class UserController {
         }
     }
 
+    @LoginRequired
     @RequestMapping(path = "/changePassword", method = RequestMethod.POST)
     public String changePassword(String originalPassword, String newPassword, String confirmedPassword, Model model) {
         User user = hostHolder.getUser();
