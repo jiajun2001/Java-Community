@@ -211,6 +211,12 @@ public class UserService implements CommunityConstant {
             return map;
         }
 
+        // Check if original password is the same as new password
+        if (newPassword.equals(originalPassword)) {
+            map.put("newPasswordMsg", "Please set a new password!");
+            return map;
+        }
+
         // Change the password
         String hashedNewPassword = CommunityUtil.md5(newPassword + user.getSalt());
         userMapper.updatePassword(user.getId(), hashedNewPassword);

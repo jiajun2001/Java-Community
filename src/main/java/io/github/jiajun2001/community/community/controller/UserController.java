@@ -106,7 +106,7 @@ public class UserController {
         Map<String, Object> map = userService.changePassword(user, originalPassword, newPassword, confirmedPassword);
         System.out.println(map);
         if (map == null || map.isEmpty()) {
-            return "redirect:/index";
+            return "redirect:/logout";
         } else {
             model.addAttribute("originalPasswordMsg", map.get("originalPasswordMsg"));
             model.addAttribute("newPasswordMsg", map.get("newPasswordMsg"));
