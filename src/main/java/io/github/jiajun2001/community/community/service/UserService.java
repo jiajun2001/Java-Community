@@ -175,4 +175,46 @@ public class UserService implements CommunityConstant {
         return userMapper.updateHeader(userId, headerURL);
     }
 
+    public Map<String, Object> changePassword(User user, String originalPassword, String newPassword, String confirmedPassword) {
+        Map<String, Object> map = new HashMap<>();
+
+        // Handle empty objects
+        if (StringUtils.isBlank(originalPassword)) {
+            map.put("originalPasswordMsg", "Please enter your original password!");
+            return map;
+        }
+        if (StringUtils.isBlank(newPassword)) {
+            map.put("newPasswordMsg", "Please enter your new password!");
+            return map;
+        }
+        if (StringUtils.isBlank(confirmedPassword)) {
+            map.put("confirmedPasswordMsg", "Please enter your confirmed password!");
+            return map;
+        }
+
+        // Check if original password is correct or not
+        String hashedOriginalPassword = CommunityUtil.md5(originalPassword + user.getSalt());
+        if (!user.getPassword().equals(hashedOriginalPassword)) {
+            map.put("originalPasswordMsg", "Original Password is incorrect!");
+            return map;
+        }
+
+        // Check if new password is strong enough
+        if (newPassword.length() < 8) {
+            map.put("newPasswordMsg", "The length of your password cannot be less than 8!");
+            return map;
+        }
+
+        // Check if new password is identical to confirmed password
+        if (!newPassword.equals(confirmedPassword)) {
+            map.put("confirmedPasswordMsg", "Please make sure the confirmed password is identical to the new password!");
+            return map;
+        }
+
+        // Change the password
+        String hashedNewPassword = CommunityUtil.md5(newPassword + user.getSalt());
+        userMapper.updatePassword(user.getId(), hashedNewPassword);
+        return map;
+    }
+
 }

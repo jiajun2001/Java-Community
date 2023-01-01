@@ -657,3 +657,5 @@ java.io.FileNotFoundException: /private/var/folders/pk/t4jy6hj90yqgdmn5vlnz9wv00
 	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-01-01 15:19:44,691 ERROR [http-nio-8080-exec-3] i.g.j.c.c.c.LoginController [LoginController.java:98] Captcha Response Errorjava.io.IOException: Broken pipe
+2023-01-01 15:24:32,529 ERROR [http-nio-8080-exec-8] i.g.j.c.c.c.LoginController [LoginController.java:98] Captcha Response Errorjava.io.IOException: Broken pipe

@@ -87,12 +87,16 @@
 				</form>
 				<!-- 修改密码 -->
 				<h6 class="text-left text-info border-bottom pb-2 mt-5">Change Password</h6>
-				<form class="mt-5">				
+				<form class="mt-5" method="post" th:action="@{/user/changePassword}">
 					<div class="form-group row mt-4">
 						<label for="old-password" class="col-sm-2 col-form-label textMiddle">Original Password:</label>
 						<div class="col-sm-10">
-							<input type="password" class="form-control" id="old-password" placeholder="Please enter your original password!" required>
-							<div class="invalid-feedback">
+							<input type="password"
+								   th:class="|form-control ${originalPasswordMsg!=null?'is-invalid':''}|"
+								   th:value="${param.originalPassword}"
+								   name="originalPassword"
+								   id="old-password" placeholder="Please enter your original password!" required>
+							<div class="invalid-feedback" th:text="${originalPasswordMsg}">
 								The length of your password cannot be less than 8!
 							</div>							
 						</div>
@@ -100,8 +104,11 @@
 					<div class="form-group row mt-4">
 						<label for="new-password" class="col-sm-2 col-form-label textMiddle">New Password:</label>
 						<div class="col-sm-10">
-							<input type="password" class="form-control" id="new-password" placeholder="Please enter your new password!" required>
-							<div class="invalid-feedback">
+							<input type="password" th:class="|form-control ${newPasswordMsg!=null?'is-invalid':''}|"
+								   th:value="${param.newPassword}"
+								   name="newPassword"
+								   id="new-password" placeholder="Please enter your new password!" required>
+							<div class="invalid-feedback" th:text="${newPasswordMsg}">
 								The length of your password cannot be less than 8!
 							</div>							
 						</div>
@@ -109,8 +116,11 @@
 					<div class="form-group row mt-4">
 						<label for="confirm-password" class="col-sm-2 col-form-label textMiddle">Confirmed Password:</label>
 						<div class="col-sm-10">
-							<input type="password" class="form-control" id="confirm-password" placeholder="Please enter your new password again!" required>
-							<div class="invalid-feedback">
+							<input type="password" th:class="|form-control ${confirmedPasswordMsg!=null?'is-invalid':''}|"
+								   th:value="${param.confirmedPassword}"
+								   name="confirmedPassword"
+								   id="confirm-password" placeholder="Please enter your new password again!" required>
+							<div class="invalid-feedback" th:text="${confirmedPasswordMsg}">
 								Passwords are not the same!
 							</div>								
 						</div>

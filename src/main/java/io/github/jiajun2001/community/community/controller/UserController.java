@@ -21,6 +21,7 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.OutputStream;
+import java.util.Map;
 
 @Controller
 @RequestMapping("/user")
@@ -96,6 +97,21 @@ public class UserController {
             }
         } catch (IOException e) {
             logger.error("Fail to load profile image: " + e.getMessage());
+        }
+    }
+
+    @RequestMapping(path = "/changePassword", method = RequestMethod.POST)
+    public String changePassword(String originalPassword, String newPassword, String confirmedPassword, Model model) {
+        User user = hostHolder.getUser();
+        Map<String, Object> map = userService.changePassword(user, originalPassword, newPassword, confirmedPassword);
+        System.out.println(map);
+        if (map == null || map.isEmpty()) {
+            return "redirect:/index";
+        } else {
+            model.addAttribute("originalPasswordMsg", map.get("originalPasswordMsg"));
+            model.addAttribute("newPasswordMsg", map.get("newPasswordMsg"));
+            model.addAttribute("confirmedPasswordMsg", map.get("confirmedPasswordMsg"));
+            return "/site/setting";
         }
     }
 }
