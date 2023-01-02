@@ -7,7 +7,6 @@ import io.github.jiajun2001.community.community.util.CookieUtil;
 import io.github.jiajun2001.community.community.util.HostHolder;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
-import org.apache.catalina.Host;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.web.servlet.HandlerInterceptor;

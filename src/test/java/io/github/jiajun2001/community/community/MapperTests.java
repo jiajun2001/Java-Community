@@ -6,6 +6,7 @@ import io.github.jiajun2001.community.community.dao.UserMapper;
 import io.github.jiajun2001.community.community.entity.DiscussPost;
 import io.github.jiajun2001.community.community.entity.LoginTicket;
 import io.github.jiajun2001.community.community.entity.User;
+import io.github.jiajun2001.community.community.service.DiscussPostService;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -26,6 +27,10 @@ public class MapperTests {
 
     @Autowired
     private LoginTicketMapper loginTicketMapper;
+
+    @Autowired
+    private DiscussPostService discussPostService;
+
 
     @Test
     public void testSelectUser() {
@@ -102,5 +107,19 @@ public class MapperTests {
         loginTicketMapper.updateStatus("abc", 1);
         loginTicket = loginTicketMapper.selectByTicket("abc");
         System.out.println(loginTicket);
+    }
+
+    @Test
+    public void testInsertPost() {
+        DiscussPost discussPost = new DiscussPost();
+        discussPost.setUserId(1);
+        discussPost.setTitle("AAAA");
+        discussPost.setContent("AAAAA");
+        discussPost.setType(1);
+        discussPost.setStatus(1);
+        discussPost.setCreateTime(new Date());
+        discussPost.setCommentCount(0);
+        discussPost.setScore(100);
+        discussPostService.addDiscussPost(discussPost);
     }
 }

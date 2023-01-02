@@ -71,14 +71,14 @@
 						<a class="nav-link" href="#">最热</a>
 					</li>
 				</ul>
-				<button type="button" class="btn btn-primary btn-sm position-absolute rt-0" data-toggle="modal" data-target="#publishModal">我要发布</button>
+				<button type="button" class="btn btn-primary btn-sm position-absolute rt-0" data-toggle="modal" data-target="#publishModal" th:if="${loginUser != null}">Post</button>
 			</div>
 			<!-- 弹出框 -->
 			<div class="modal fade" id="publishModal" tabindex="-1" role="dialog" aria-labelledby="publishModalLabel" aria-hidden="true">
 				<div class="modal-dialog modal-lg" role="document">
 					<div class="modal-content">
 						<div class="modal-header">
-							<h5 class="modal-title" id="publishModalLabel">新帖发布</h5>
+							<h5 class="modal-title" id="publishModalLabel">Posting New Content</h5>
 							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 								<span aria-hidden="true">&times;</span>
 							</button>
@@ -86,18 +86,18 @@
 						<div class="modal-body">
 							<form>
 								<div class="form-group">
-									<label for="recipient-name" class="col-form-label">标题：</label>
+									<label for="recipient-name" class="col-form-label">Title：</label>
 									<input type="text" class="form-control" id="recipient-name">
 								</div>
 								<div class="form-group">
-									<label for="message-text" class="col-form-label">正文：</label>
+									<label for="message-text" class="col-form-label">Content：</label>
 									<textarea class="form-control" id="message-text" rows="15"></textarea>
 								</div>
 							</form>
 						</div>
 						<div class="modal-footer">
-							<button type="button" class="btn btn-secondary" data-dismiss="modal">取消</button>
-							<button type="button" class="btn btn-primary" id="publishBtn">发布</button>
+							<button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+							<button type="button" class="btn btn-primary" id="publishBtn">Post</button>
 						</div>
 					</div>
 				</div>
@@ -107,7 +107,7 @@
 				<div class="modal-dialog modal-lg" role="document">
 					<div class="modal-content">
 						<div class="modal-header">
-							<h5 class="modal-title" id="hintModalLabel">提示</h5>
+							<h5 class="modal-title" id="hintModalLabel">Notification</h5>
 						</div>
 						<div class="modal-body" id="hintBody">
 							发布完毕!
