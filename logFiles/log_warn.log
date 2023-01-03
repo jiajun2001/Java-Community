@@ -32,3 +32,9 @@
  java.base@17.0.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
  java.base@17.0.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
  java.base@17.0.1/java.lang.Thread.run(Thread.java:833)
+2023-01-03 14:02:10,069 WARN [HikariPool-1 housekeeper] c.z.h.p.HikariPool [HikariPool.java:804] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=9m43s30ms).
+2023-01-03 14:03:50,198 WARN [HikariPool-1 housekeeper] c.z.h.p.HikariPool [HikariPool.java:796] HikariPool-1 - Retrograde clock change detected (housekeeper delta=29s551ms), soft-evicting connections from pool.
+2023-01-03 14:05:30,779 WARN [HikariPool-1 housekeeper] c.z.h.p.HikariPool [HikariPool.java:804] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m10s571ms).
+2023-01-03 14:09:57,471 WARN [HikariPool-1 housekeeper] c.z.h.p.HikariPool [HikariPool.java:804] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m9s125ms).
+2023-01-03 14:12:34,471 WARN [HikariPool-1 housekeeper] c.z.h.p.HikariPool [HikariPool.java:804] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m6s991ms).
+2023-01-03 14:15:50,736 WARN [HikariPool-1 housekeeper] c.z.h.p.HikariPool [HikariPool.java:804] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m4s895ms).
