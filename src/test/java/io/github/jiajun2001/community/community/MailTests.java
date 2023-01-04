@@ -20,7 +20,7 @@ public class MailTests {
 
     @Test
     public void testTextMail() {
-        mailClient.sendMail("jiajunyu@yahoo.com", "Hello", "Hello bro! This email is sent by Java + Spring framework(Spring Email). If you receive this email, can you reply me on whatsapp?");
+        mailClient.sendMail("chanjianzhe2002@gmail.com", "Hello", "Hello bro! Why malaysian are so smart like you!");
     }
 
     @Test
