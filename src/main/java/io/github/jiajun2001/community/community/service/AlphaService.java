@@ -108,7 +108,6 @@ public class AlphaService {
 
                 // Create an error, see if it can roll back
                 Integer.valueOf("abc");
-
                 return "ok";
             }
         });
