@@ -134,7 +134,7 @@
 								<ul class="d-inline float-right">
 									<li class="d-inline ml-2">Likes 11</li>
 									<li class="d-inline ml-2">|</li>
-									<li class="d-inline ml-2">Replies 7</li>
+									<li class="d-inline ml-2">Replies <span th:text="${map.post.commentCount}">7</span></li>
 								</ul>
 							</div>
 						</div>
@@ -142,7 +142,7 @@
 				</li>
 			</ul>
 			<!-- 分页 -->
-			<nav class="mt-5" th:if="${page.rows>0}">
+			<nav class="mt-5" th:if="${page.rows>0}" th:fragment="pagination">
 				<ul class="pagination justify-content-center">
 					<li class="page-item">
 						<a class="page-link" th:href="@{${page.path}(current=1)}">First Page</a>

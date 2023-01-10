@@ -14,4 +14,10 @@ public interface CommunityConstant {
     // After clicking remember me
     int REMEMBER_EXPIRED_SECOND = 3600 * 24 * 100;
 
+    // Entity Type: post
+    int ENTITY_TYPE_POST = 1;
+
+    // Entity Type: comment
+    int ENTITY_TYPE_COMMENT = 2;
+
 }
