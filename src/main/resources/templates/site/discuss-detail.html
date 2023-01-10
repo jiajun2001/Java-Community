@@ -6,7 +6,7 @@
 	<link rel="icon" href="https://static.nowcoder.com/images/logo_87_87.png"/>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" crossorigin="anonymous">
 	<link rel="stylesheet" th:href="@{/css/global.css}" />
-	<link rel="stylesheet" th:href="@{css/discuss-detail.css}" />
+	<link rel="stylesheet" th:href="@{/css/discuss-detail.css}" />
 	<title>Adelaide CS Community - Post Content</title>
 </head>
 <body>
@@ -85,11 +85,11 @@
 							<ul class="d-inline float-right">
 								<li class="d-inline ml-2"><a href="#" class="text-primary">Likes 11</a></li>
 								<li class="d-inline ml-2">|</li>
-								<li class="d-inline ml-2"><a href="#replyform" class="text-primary">Replies 7</a></li>
+								<li class="d-inline ml-2"><a href="#replyform" class="text-primary">Replies <i th:text="${post.commentCount}">7</i></a></li>
 							</ul>
 						</div>
 					</div>
-				</div>	
+				</div>
 				<!-- 正文 -->
 				<div class="mt-4 mb-3 content" th:utext="${post.content}">
 					金三银四的金三已经到了，你还沉浸在过年的喜悦中吗？
@@ -163,9 +163,9 @@
 											</div>
 											<div class="text-right mt-2">
 												<button type="button" class="btn btn-primary btn-sm" onclick="#">&nbsp;&nbsp;Reply&nbsp;&nbsp;</button>
-											</div>										
+											</div>
 										</div>
-									</div>								
+									</div>
 								</li>
 								<!-- 回复输入框 -->
 								<li class="pb-3 pt-3">
