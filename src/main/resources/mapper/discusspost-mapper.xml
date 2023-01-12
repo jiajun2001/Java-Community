@@ -4,11 +4,11 @@
         "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="io.github.jiajun2001.community.community.dao.DiscussPostMapper">
 
-    <sql id = "selectFields">
+    <sql id="selectFields">
         id, user_id, title, content, type, status, create_time, comment_count, score
     </sql>
 
-    <sql id = "insertFields">
+    <sql id="insertFields">
         user_id, title, content, type, status, create_time, comment_count, score
     </sql>
 

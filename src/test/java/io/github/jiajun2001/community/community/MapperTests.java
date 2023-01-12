@@ -1,10 +1,13 @@
 package io.github.jiajun2001.community.community;
 
+import com.sun.mail.imap.MessageVanishedEvent;
 import io.github.jiajun2001.community.community.dao.DiscussPostMapper;
 import io.github.jiajun2001.community.community.dao.LoginTicketMapper;
+import io.github.jiajun2001.community.community.dao.MessageMapper;
 import io.github.jiajun2001.community.community.dao.UserMapper;
 import io.github.jiajun2001.community.community.entity.DiscussPost;
 import io.github.jiajun2001.community.community.entity.LoginTicket;
+import io.github.jiajun2001.community.community.entity.Message;
 import io.github.jiajun2001.community.community.entity.User;
 import io.github.jiajun2001.community.community.service.DiscussPostService;
 import org.junit.jupiter.api.Test;
@@ -30,6 +33,9 @@ public class MapperTests {
 
     @Autowired
     private DiscussPostService discussPostService;
+
+    @Autowired
+    private MessageMapper messageMapper;
 
 
     @Test
@@ -121,5 +127,27 @@ public class MapperTests {
         discussPost.setCommentCount(0);
         discussPost.setScore(100);
         discussPostService.addDiscussPost(discussPost);
+    }
+
+    @Test
+    public void testSelectMessages() {
+        List<Message> list = messageMapper.selectConversations(111, 0, 20);
+        for (Message message : list) {
+            System.out.println(message);
+        }
+
+        int count = messageMapper.selectConversationCount(111);
+        System.out.println(count);
+
+        list = messageMapper.selectMessages("111_112", 0, 10);
+        for (Message message : list) {
+            System.out.println(message);
+        }
+
+        count = messageMapper.selectMessageCount("111_112");
+        System.out.println(count);
+
+        count = messageMapper.selectMessageUnreadCount(131,"111_131");
+        System.out.println(count);
     }
 }
