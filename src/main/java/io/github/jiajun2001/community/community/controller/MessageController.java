@@ -5,6 +5,7 @@ import io.github.jiajun2001.community.community.entity.Page;
 import io.github.jiajun2001.community.community.entity.User;
 import io.github.jiajun2001.community.community.service.MessageService;
 import io.github.jiajun2001.community.community.service.UserService;
+import io.github.jiajun2001.community.community.util.CommunityUtil;
 import io.github.jiajun2001.community.community.util.HostHolder;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -12,6 +13,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 import java.util.*;
 
@@ -83,7 +85,25 @@ public class MessageController {
         // Find the target of the conversation
         model.addAttribute("target", getMessageTarget(conversationId));
 
+        // Set the status of messages to be 'read'
+        List<Integer> ids = getMessageIds(messageList);
+        if (!ids.isEmpty()) {
+            messageService.readMessage(ids);
+        }
+
         return "/site/letter-detail";
+    }
+
+    private List<Integer> getMessageIds(List<Message> messageList) {
+        List<Integer> ids = new ArrayList<>();
+        if (messageList != null) {
+            for (Message message : messageList) {
+                if (hostHolder.getUser().getId() == message.getToId() && message.getStatus() == 0) {
+                    ids.add(message.getId());
+                }
+            }
+        }
+        return ids;
     }
 
     private User getMessageTarget(String conversationId) {
@@ -96,4 +116,28 @@ public class MessageController {
             return userService.findUserById(id0);
         }
     }
+
+    @RequestMapping(path = "/message/send", method = RequestMethod.POST)
+    @ResponseBody
+    public String sentMessage(String toName, String content) {
+        User target = userService.findUserByName(toName);
+        if (target == null) {
+            return CommunityUtil.getJSONString(1, "The user does not exist!");
+        }
+        Message message = new Message();
+        message.setFromId(hostHolder.getUser().getId());
+        message.setToId(target.getId());
+        if (message.getFromId() < message.getToId()) {
+            message.setConversationId(message.getFromId() + "_" + message.getToId());
+        } else {
+            message.setConversationId(message.getToId() + "_" + message.getFromId());
+        }
+        message.setContent(content);
+        message.setStatus(0);
+        message.setCreateTime(new Date());
+        messageService.addMessage(message);
+
+        return CommunityUtil.getJSONString(0);
+    }
 }
+

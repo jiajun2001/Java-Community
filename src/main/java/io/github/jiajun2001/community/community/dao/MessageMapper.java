@@ -22,4 +22,10 @@ public interface MessageMapper {
 
     // Get the number of unread messages (from a particular conversation or all conversations)
     int selectMessageUnreadCount(int userId, String conversationId);
+
+    // Insert a message
+    int insertMessage(Message message);
+
+    // Update message status (unread -> read)
+    int updateStatus(List<Integer> ids, int status);
 }

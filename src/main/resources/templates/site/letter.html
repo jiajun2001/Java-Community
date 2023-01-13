@@ -88,18 +88,18 @@
 							<div class="modal-body">
 								<form>
 									<div class="form-group">
-										<label for="recipient-name" class="col-form-label">发给：</label>
+										<label for="recipient-name" class="col-form-label">Send to：</label>
 										<input type="text" class="form-control" id="recipient-name">
 									</div>
 									<div class="form-group">
-										<label for="message-text" class="col-form-label">内容：</label>
+										<label for="message-text" class="col-form-label">Content：</label>
 										<textarea class="form-control" id="message-text" rows="10"></textarea>
 									</div>
 								</form>
 							</div>
 							<div class="modal-footer">
-								<button type="button" class="btn btn-secondary" data-dismiss="modal">取消</button>
-								<button type="button" class="btn btn-primary" id="sendBtn">发送</button>
+								<button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+								<button type="button" class="btn btn-primary" id="sendBtn">Send</button>
 							</div>
 						</div>
 					</div>
@@ -109,10 +109,10 @@
 					<div class="modal-dialog modal-lg" role="document">
 						<div class="modal-content">
 							<div class="modal-header">
-								<h5 class="modal-title" id="hintModalLabel">提示</h5>
+								<h5 class="modal-title" id="hintModalLabel">Notification</h5>
 							</div>
 							<div class="modal-body" id="hintBody">
-								发送完毕!
+								Success in sending the message!
 							</div>
 						</div>
 					</div>
@@ -127,7 +127,7 @@
 						</a>
 						<div class="media-body">
 							<h6 class="mt-0 mb-3">
-								<span class="text-success" th:utext="${map.target.username}">User name</span>
+								<span class="text-success" th:utext="${map.target.username}">Username</span>
 								<span class="float-right text-muted font-size-12" th:text="${#dates.format(map.conversation.createTime, 'yyyy-MM-dd HH:mm:ss')}">2019-04-28 14:13:25</span>
 							</h6>
 							<div>
@@ -223,6 +223,6 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" crossorigin="anonymous"></script>
 	<script th:src="@{/js/global.js}"></script>
-	<script src="@{/js/letter.js}"></script>
+	<script th:src="@{/js/letter.js}"></script>
 </body>
 </html>
