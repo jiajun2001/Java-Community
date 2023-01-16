@@ -22,12 +22,31 @@ function send_letter() {
             setTimeout(function(){
                 $("#hintModal").modal("hide");
                 location.reload();
-            }, 700);
+            }, 1000);
 	    }
 	);
 }
 
 function delete_msg() {
-	// TODO 删除数据
+	// Delete the message
 	$(this).parents(".media").remove();
+	btn = this
+    var deleteMsgId = $(btn).prev().val();
+    $.post(
+        CONTEXT_PATH + "/message/delete",
+        {"messageId": deleteMsgId},
+        function(data) {
+            data = $.parseJSON(data);
+            if (data.code == 0) {
+                $("#hintBody").text("Success in deleting the message!");
+            } else {
+                $("#hintBody").text(data.msg);
+            }
+            $("#hintModal").modal("show");
+            setTimeout(function(){
+                $("#hintModal").modal("hide");
+                location.reload();
+            }, 1000);
+        }
+    );
 }

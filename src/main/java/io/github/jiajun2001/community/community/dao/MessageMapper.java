@@ -28,4 +28,6 @@ public interface MessageMapper {
 
     // Update message status (unread -> read)
     int updateStatus(List<Integer> ids, int status);
+
+    int deleteMessage(int messageId);
 }
