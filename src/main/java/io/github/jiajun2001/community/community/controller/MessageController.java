@@ -31,7 +31,6 @@ public class MessageController {
 
     @RequestMapping(path = "/message/list", method = RequestMethod.GET)
     public String getMessageList(Model model, Page page) {
-
         // Get the user
         User user = hostHolder.getUser();
 
