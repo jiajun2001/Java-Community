@@ -6,6 +6,7 @@ import io.github.jiajun2001.community.community.entity.Page;
 import io.github.jiajun2001.community.community.entity.User;
 import io.github.jiajun2001.community.community.service.CommentService;
 import io.github.jiajun2001.community.community.service.DiscussPostService;
+import io.github.jiajun2001.community.community.service.LikeService;
 import io.github.jiajun2001.community.community.service.UserService;
 import io.github.jiajun2001.community.community.util.CommunityConstant;
 import io.github.jiajun2001.community.community.util.CommunityUtil;
@@ -37,6 +38,9 @@ public class DiscussPostController implements CommunityConstant {
     @Autowired
     private CommentService commentService;
 
+    @Autowired
+    private LikeService likeService;
+
     @RequestMapping(path = "/add", method = RequestMethod.POST)
     @ResponseBody
     public String addDiscussPost(String title, String content) {
@@ -65,6 +69,14 @@ public class DiscussPostController implements CommunityConstant {
         User user = userService.findUserById(discussPost.getUserId());
         model.addAttribute("user", user);
 
+        // find the like of the post
+        long likeCount = likeService.findEntityLikeCount(ENTITY_TYPE_POST, discussPostId);
+        model.addAttribute("likeCount", likeCount);
+
+        // Check if the user liked the post or not
+        int likeStatus = hostHolder.getUser() == null ? 0 : likeService.findEntityLikeStatus(hostHolder.getUser().getId(), ENTITY_TYPE_POST, discussPostId);
+        model.addAttribute("likeStatus", likeStatus);
+
         // Set page information
         page.setLimit(5);
         page.setPath("/discuss/detail/" + discussPostId);
@@ -77,6 +89,12 @@ public class DiscussPostController implements CommunityConstant {
                 Map<String, Object> commentVo = new HashMap<>();
                 commentVo.put("comment", comment);
                 commentVo.put("user", userService.findUserById(comment.getUserId()));
+                // find the like of the post
+                likeCount = likeService.findEntityLikeCount(ENTITY_TYPE_COMMENT, comment.getId());
+                commentVo.put("likeCount", likeCount);
+                // Check if the user liked the post or not
+                likeStatus = hostHolder.getUser() == null ? 0 : likeService.findEntityLikeStatus(hostHolder.getUser().getId(), ENTITY_TYPE_COMMENT, comment.getId());
+                commentVo.put("likeStatus", likeStatus);
                 // Comments to the comment
                 List<Comment> replyList = commentService.findCommentsByEntity(ENTITY_TYPE_COMMENT, comment.getId(), 0, Integer.MAX_VALUE);
                 List<Map<String, Object>> replyVoList = new ArrayList<>();
@@ -85,6 +103,12 @@ public class DiscussPostController implements CommunityConstant {
                         Map<String, Object> replyVo = new HashMap<>();
                         replyVo.put("reply", reply);
                         replyVo.put("user", userService.findUserById(reply.getUserId()));
+                        // find the like of the post
+                        likeCount = likeService.findEntityLikeCount(ENTITY_TYPE_COMMENT, reply.getId());
+                        replyVo.put("likeCount", likeCount);
+                        // Check if the user liked the post or not
+                        likeStatus = hostHolder.getUser() == null ? 0 : likeService.findEntityLikeStatus(hostHolder.getUser().getId(), ENTITY_TYPE_COMMENT, reply.getId());
+                        replyVo.put("likeStatus", likeStatus);
                         // Find the reply target
                         User target = reply.getTargetId() == 0 ? null : userService.findUserById(reply.getTargetId());
                         replyVo.put("target", target);

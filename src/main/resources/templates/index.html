@@ -65,10 +65,10 @@
 				<!-- 筛选条件 -->
 				<ul class="nav nav-tabs mb-3">
 					<li class="nav-item">
-						<a class="nav-link active" href="#">最新</a>
+						<a class="nav-link active" href="#">Newest</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#">最热</a>
+						<a class="nav-link" href="#">Hottest</a>
 					</li>
 				</ul>
 				<button type="button" class="btn btn-primary btn-sm position-absolute rt-0" data-toggle="modal" data-target="#publishModal" th:if="${loginUser != null}">Post</button>
@@ -132,9 +132,9 @@
 							<div class="text-muted font-size-12">
 								<u class="mr-3" th:utext="${map.user.username}"></u> posted on <b th:text="${#dates.format(map.post.createTime, 'yyyy-MM-dd HH:mm')}"></b>
 								<ul class="d-inline float-right">
-									<li class="d-inline ml-2">Likes 11</li>
+									<li class="d-inline ml-2">Like <Span th:text="${map.likeCount}">11</Span></li>
 									<li class="d-inline ml-2">|</li>
-									<li class="d-inline ml-2">Replies <span th:text="${map.post.commentCount}">7</span></li>
+									<li class="d-inline ml-2">Reply <span th:text="${map.post.commentCount}">7</span></li>
 								</ul>
 							</div>
 						</div>
