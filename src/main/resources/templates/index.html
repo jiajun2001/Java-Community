@@ -40,7 +40,7 @@
 								<img th:src="${loginUser.headerURL}" class="rounded-circle" style="width:30px;"/>
 							</a>
 							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-								<a class="dropdown-item text-center" href="site/profile.html">My Profile</a>
+								<a class="dropdown-item text-center" th:href="@{|/user/profile/${loginUser.id}|}">My Profile</a>
 								<a class="dropdown-item text-center" th:href="@{/user/setting}">Account Settings</a>
 								<a class="dropdown-item text-center" th:href="@{/logout}">Log Out</a>
 								<div class="dropdown-divider"></div>
@@ -120,8 +120,8 @@
 			<ul class="list-unstyled">
 				<li class="media pb-3 pt-3 mb-3 border-bottom" th:each="map:${discussPosts}">
 					<th:block th:if="${map.user != null}">
-						<a href="site/profile.html">
-							<img th:src="${map.user.headerURL}" class="mr-4 rounded-circle" alt="User Profile" style="width:50px;height:50px;" src="">
+						<a th:href="@{|/user/profile/${map.user.id}|}">
+							<img th:src="${map.user.headerURL}" th:href="@{|/user/profile/${map.user.id}|}" class="mr-4 rounded-circle" alt="User Profile" style="width:50px;height:50px;" src="">
 						</a>
 						<div class="media-body">
 							<h6 class="mt-0 mb-3">

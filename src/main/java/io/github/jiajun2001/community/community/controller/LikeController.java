@@ -24,12 +24,12 @@ public class LikeController {
 
     @RequestMapping(path = "/like", method = RequestMethod.POST)
     @ResponseBody
-    public String like(int entityType, int entityId) {
+    public String like(int entityType, int entityId, int entityUserId) {
         User user = hostHolder.getUser();
         if (user == null) return CommunityUtil.getJSONString(1, "You have not logged in!");
 
         // Like
-        likeService.like(user.getId(), entityType, entityId);
+        likeService.like(user.getId(), entityType, entityId, entityUserId);
 
         // Get the number of likes for an entity
         long likeCount = likeService.findEntityLikeCount(entityType, entityId);

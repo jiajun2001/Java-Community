@@ -2,6 +2,7 @@ package io.github.jiajun2001.community.community.controller;
 
 import io.github.jiajun2001.community.community.annotation.LoginRequired;
 import io.github.jiajun2001.community.community.entity.User;
+import io.github.jiajun2001.community.community.service.LikeService;
 import io.github.jiajun2001.community.community.service.UserService;
 import io.github.jiajun2001.community.community.util.CommunityUtil;
 import io.github.jiajun2001.community.community.util.HostHolder;
@@ -45,6 +46,9 @@ public class UserController {
 
     @Autowired
     private HostHolder hostHolder;
+
+    @Autowired
+    private LikeService likeService;
 
     @LoginRequired
     @RequestMapping(path = "/setting", method = RequestMethod.GET)
@@ -129,5 +133,20 @@ public class UserController {
             model.addAttribute("confirmedPasswordMsg", map.get("confirmedPasswordMsg"));
             return "/site/setting";
         }
+    }
+
+    @RequestMapping(path = "/profile/{userId}", method = RequestMethod.GET)
+    public String getProfilePage(@PathVariable("userId") int userId, Model model) {
+        User user = userService.findUserById(userId);
+        if (user == null) {
+            throw new RuntimeException("The user does not exist!");
+        }
+
+        // User information
+        model.addAttribute("user", user);
+        int likeCount = likeService.findUserLikeCount(userId);
+        model.addAttribute("likeCount", likeCount);
+
+        return "/site/profile";
     }
 }
