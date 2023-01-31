@@ -2,8 +2,10 @@ package io.github.jiajun2001.community.community.controller;
 
 import io.github.jiajun2001.community.community.annotation.LoginRequired;
 import io.github.jiajun2001.community.community.entity.User;
+import io.github.jiajun2001.community.community.service.FollowService;
 import io.github.jiajun2001.community.community.service.LikeService;
 import io.github.jiajun2001.community.community.service.UserService;
+import io.github.jiajun2001.community.community.util.CommunityConstant;
 import io.github.jiajun2001.community.community.util.CommunityUtil;
 import io.github.jiajun2001.community.community.util.HostHolder;
 import jakarta.servlet.http.HttpServletResponse;
@@ -28,7 +30,7 @@ import java.util.Map;
 
 @Controller
 @RequestMapping("/user")
-public class UserController {
+public class UserController implements CommunityConstant {
 
     private static final Logger logger = LoggerFactory.getLogger(UserController.class);
 
@@ -49,6 +51,9 @@ public class UserController {
 
     @Autowired
     private LikeService likeService;
+
+    @Autowired
+    private FollowService followService;
 
     @LoginRequired
     @RequestMapping(path = "/setting", method = RequestMethod.GET)
@@ -146,6 +151,21 @@ public class UserController {
         model.addAttribute("user", user);
         int likeCount = likeService.findUserLikeCount(userId);
         model.addAttribute("likeCount", likeCount);
+
+        // Count the followee number
+        long followeeCount = followService.findFollowerCount(userId, ENTITY_TYPE_USER);
+        model.addAttribute("followeeCount", followeeCount);
+
+        // Count the follower number
+        long followerCount = followService.findFollowerCount(ENTITY_TYPE_USER, userId);
+        model.addAttribute("followerCount", followerCount);
+
+        // Check if the user has followed the entity or not
+        boolean hasFollowed = false;
+        if (hostHolder.getUser() != null) {
+            hasFollowed = followService.hasFollowed(hostHolder.getUser().getId(), ENTITY_TYPE_USER, userId);
+        }
+        model.addAttribute("hasFollowed", hasFollowed);
 
         return "/site/profile";
     }

@@ -81,14 +81,17 @@
 					<div class="media-body">
 						<h5 class="mt-0 text-warning">
 							<span th:utext="${user.username}">username</span>
-							<button type="button" class="btn btn-info btn-sm float-right mr-5 follow-btn">Follow</button>
+							<input type="hidden" id="entityId" th:value="${user.id}">
+							<button type="button" th:class="|btn ${hasFollowed?'btn-secondary':'btn-info'} btn-sm float-right mr-5 follow-btn|"
+									th:text="${hasFollowed?'Followed':'Follow'}"
+									th:if="${loginUser!=null&&loginUser.id!=user.id}">Follow</button>
 						</h5>
 						<div class="text-muted mt-3">
 							<span>registered at <i class="text-muted" th:text="${#dates.format(user.createTime, 'yyyy-MM-dd HH:mm:ss')}">2015-06-12 15:20:12</i></span>
 						</div>
 						<div class="text-muted mt-3 mb-5">
-							<span>Following <a class="text-primary" href="followee.html">5</a> </span>
-							<span class="ml-4">Follower <a class="text-primary" href="follower.html">123</a> </span>
+							<span>Following <a class="text-primary" href="followee.html" th:text="${followeeCount}">5</a> </span>
+							<span class="ml-4">Follower <a class="text-primary" href="follower.html" th:text="${followerCount}">123</a> </span>
 							<span class="ml-4">Received <i class="text-danger" th:text="${likeCount}">87</i> like(s)</span>
 						</div>
 					</div>
