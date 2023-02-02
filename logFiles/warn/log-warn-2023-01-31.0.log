@@ -1,0 +1,3 @@
+2023-01-31 19:04:56,492 WARN [http-nio-8080-exec-10] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:207] Resolved [java.lang.NullPointerException: Cannot invoke "io.github.jiajun2001.community.community.entity.User.getId()" because "user" is null]
+2023-01-31 19:05:08,660 WARN [http-nio-8080-exec-1] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:207] Resolved [java.lang.NullPointerException: Cannot invoke "io.github.jiajun2001.community.community.entity.User.getId()" because "user" is null]
+2023-01-31 19:44:04,661 WARN [HikariPool-1 housekeeper] c.z.h.p.HikariPool [HikariPool.java:804] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=7m24s560ms).

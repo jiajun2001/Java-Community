@@ -153,7 +153,7 @@ public class UserController implements CommunityConstant {
         model.addAttribute("likeCount", likeCount);
 
         // Count the followee number
-        long followeeCount = followService.findFollowerCount(userId, ENTITY_TYPE_USER);
+        long followeeCount = followService.findFolloweeCount(userId, ENTITY_TYPE_USER);
         model.addAttribute("followeeCount", followeeCount);
 
         // Count the follower number
