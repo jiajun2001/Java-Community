@@ -2033,3 +2033,5 @@
 2023-02-11 19:28:35,832 INFO [http-nio-8080-exec-5] i.g.j.c.c.a.ServiceLogAspect [ServiceLogAspect.java:37] User: [0:0:0:0:0:0:0:1], at [2023-02-11 19:28:35], visited [io.github.jiajun2001.community.community.service.LikeService.findEntityLikeCount].
 2023-02-11 19:28:35,833 INFO [http-nio-8080-exec-5] i.g.j.c.c.a.ServiceLogAspect [ServiceLogAspect.java:37] User: [0:0:0:0:0:0:0:1], at [2023-02-11 19:28:35], visited [io.github.jiajun2001.community.community.service.UserService.findUserById].
 2023-02-11 19:28:35,834 INFO [http-nio-8080-exec-5] i.g.j.c.c.a.ServiceLogAspect [ServiceLogAspect.java:37] User: [0:0:0:0:0:0:0:1], at [2023-02-11 19:28:35], visited [io.github.jiajun2001.community.community.service.LikeService.findEntityLikeCount].
+2023-02-11 19:31:17,165 INFO [SpringApplicationShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:350] HikariPool-1 - Shutdown initiated...
+2023-02-11 19:31:17,170 INFO [SpringApplicationShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:352] HikariPool-1 - Shutdown completed.
