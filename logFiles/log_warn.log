@@ -1,430 +1,349 @@
-2023-02-11 17:09:39,512 WARN [http-nio-8080-exec-1] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:207] Resolved [org.mybatis.spring.MyBatisSystemException]
-2023-02-11 17:09:45,945 WARN [http-nio-8080-exec-4] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:207] Resolved [org.mybatis.spring.MyBatisSystemException]
-2023-02-11 17:09:46,991 WARN [http-nio-8080-exec-6] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:207] Resolved [org.mybatis.spring.MyBatisSystemException]
-2023-02-11 17:09:56,126 WARN [http-nio-8080-exec-8] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:207] Resolved [org.mybatis.spring.MyBatisSystemException]
-2023-02-11 17:10:14,041 WARN [http-nio-8080-exec-6] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:207] Resolved [org.mybatis.spring.MyBatisSystemException]
-2023-02-11 17:10:18,988 WARN [http-nio-8080-exec-8] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:207] Resolved [org.mybatis.spring.MyBatisSystemException]
-2023-02-11 17:11:33,284 WARN [http-nio-8080-exec-1] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:207] Resolved [org.mybatis.spring.MyBatisSystemException]
-2023-02-11 17:11:34,326 WARN [http-nio-8080-exec-3] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:207] Resolved [org.mybatis.spring.MyBatisSystemException]
-2023-02-11 17:12:51,535 WARN [http-nio-8080-exec-1] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:207] Resolved [org.mybatis.spring.MyBatisSystemException]
-2023-02-11 17:12:52,581 WARN [http-nio-8080-exec-3] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:207] Resolved [org.mybatis.spring.MyBatisSystemException]
-2023-02-11 17:13:12,703 WARN [http-nio-8080-exec-1] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:207] Resolved [org.mybatis.spring.MyBatisSystemException]
-2023-02-11 17:18:18,775 WARN [http-nio-8080-exec-2] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:207] Resolved [org.mybatis.spring.MyBatisSystemException]
-2023-02-11 17:18:19,812 WARN [http-nio-8080-exec-4] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:207] Resolved [org.mybatis.spring.MyBatisSystemException]
-2023-02-11 17:28:25,204 WARN [http-nio-8080-exec-7] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:207] Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'int'; For input string: "my-post.html"]
-2023-02-11 17:29:09,733 WARN [http-nio-8080-exec-2] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:207] Resolved [java.lang.NumberFormatException: For input string: "profile.html"]
-2023-02-11 17:29:39,221 WARN [http-nio-8080-exec-8] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:207] Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'int'; For input string: "my-post.html"]
-2023-02-11 17:30:29,677 WARN [http-nio-8080-exec-9] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:207] Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'int'; For input string: "my-post.html"]
-2023-02-11 17:32:38,208 WARN [http-nio-8080-exec-1] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:207] Resolved [java.lang.NumberFormatException: For input string: "profile.html"]
-2023-02-11 17:36:44,782 WARN [http-nio-8080-exec-5] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:207] Resolved [java.lang.NumberFormatException: For input string: "profile.html"]
-2023-02-11 17:42:37,252 WARN [http-nio-8080-exec-8] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:207] Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'int'; For input string: "my-post.html"]
-2023-02-11 17:42:39,048 WARN [http-nio-8080-exec-4] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:207] Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'int'; For input string: "profile.html"]
-2023-02-11 17:42:42,479 WARN [http-nio-8080-exec-3] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:207] Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'int'; For input string: "profile.html"]
-2023-02-11 17:42:44,146 WARN [http-nio-8080-exec-9] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:207] Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'int'; For input string: "my-post.html"]
-2023-02-11 18:00:03,117 WARN [HikariPool-1 housekeeper] c.z.h.p.HikariPool [HikariPool.java:804] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=12m50s763ms).
-2023-02-11 18:02:42,781 WARN [HikariPool-1 housekeeper] c.z.h.p.HikariPool [HikariPool.java:804] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m9s663ms).
-2023-02-11 18:34:55,055 WARN [Thread-5] o.a.c.l.WebappClassLoaderBase [DirectJDKLog.java:173] The web application [community] appears to have started a thread named [HikariPool-1 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
- java.base@17.0.1/jdk.internal.misc.Unsafe.park(Native Method)
- java.base@17.0.1/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
- java.base@17.0.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1672)
- java.base@17.0.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
- java.base@17.0.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
- java.base@17.0.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
- java.base@17.0.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
- java.base@17.0.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
- java.base@17.0.1/java.lang.Thread.run(Thread.java:833)
-2023-02-11 18:34:55,056 WARN [Thread-5] o.a.c.l.WebappClassLoaderBase [DirectJDKLog.java:173] The web application [community] appears to have started a thread named [lettuce-nioEventLoop-4-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
- java.base@17.0.1/sun.nio.ch.KQueue.poll(Native Method)
- java.base@17.0.1/sun.nio.ch.KQueueSelectorImpl.doSelect(KQueueSelectorImpl.java:122)
- java.base@17.0.1/sun.nio.ch.SelectorImpl.lockAndDoSelect(SelectorImpl.java:129)
- java.base@17.0.1/sun.nio.ch.SelectorImpl.select(SelectorImpl.java:146)
- app//io.netty.channel.nio.SelectedSelectionKeySetSelector.select(SelectedSelectionKeySetSelector.java:68)
- app//io.netty.channel.nio.NioEventLoop.select(NioEventLoop.java:879)
- app//io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:526)
- app//io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
- app//io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
- app//io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
- java.base@17.0.1/java.lang.Thread.run(Thread.java:833)
-2023-02-11 18:34:55,057 WARN [Thread-5] o.a.c.l.WebappClassLoaderBase [DirectJDKLog.java:173] The web application [community] appears to have started a thread named [lettuce-eventExecutorLoop-1-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
- java.base@17.0.1/jdk.internal.misc.Unsafe.park(Native Method)
- java.base@17.0.1/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
- java.base@17.0.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:506)
- java.base@17.0.1/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3463)
- java.base@17.0.1/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3434)
- java.base@17.0.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1623)
- java.base@17.0.1/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:435)
- app//io.netty.util.concurrent.SingleThreadEventExecutor.takeTask(SingleThreadEventExecutor.java:244)
- app//io.netty.util.concurrent.DefaultEventExecutor.run(DefaultEventExecutor.java:64)
- app//io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
- app//io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
- app//io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
- java.base@17.0.1/java.lang.Thread.run(Thread.java:833)
-2023-02-11 18:34:55,057 WARN [Thread-5] o.a.c.l.WebappClassLoaderBase [DirectJDKLog.java:173] The web application [community] appears to have started a thread named [lettuce-eventExecutorLoop-1-2] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
- java.base@17.0.1/jdk.internal.misc.Unsafe.park(Native Method)
- java.base@17.0.1/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
- java.base@17.0.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:506)
- java.base@17.0.1/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3463)
- java.base@17.0.1/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3434)
- java.base@17.0.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1623)
- java.base@17.0.1/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:435)
- app//io.netty.util.concurrent.SingleThreadEventExecutor.takeTask(SingleThreadEventExecutor.java:244)
- app//io.netty.util.concurrent.DefaultEventExecutor.run(DefaultEventExecutor.java:64)
- app//io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
- app//io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
- app//io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
- java.base@17.0.1/java.lang.Thread.run(Thread.java:833)
-2023-02-11 18:34:55,058 WARN [Thread-5] o.a.c.l.WebappClassLoaderBase [DirectJDKLog.java:173] The web application [community] appears to have started a thread named [lettuce-eventExecutorLoop-1-3] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
- java.base@17.0.1/jdk.internal.misc.Unsafe.park(Native Method)
- java.base@17.0.1/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
- java.base@17.0.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:506)
- java.base@17.0.1/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3463)
- java.base@17.0.1/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3434)
- java.base@17.0.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1623)
- java.base@17.0.1/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:435)
- app//io.netty.util.concurrent.SingleThreadEventExecutor.takeTask(SingleThreadEventExecutor.java:244)
- app//io.netty.util.concurrent.DefaultEventExecutor.run(DefaultEventExecutor.java:64)
- app//io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
- app//io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
- app//io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
- java.base@17.0.1/java.lang.Thread.run(Thread.java:833)
-2023-02-11 18:34:55,059 WARN [Thread-5] o.a.c.l.WebappClassLoaderBase [DirectJDKLog.java:173] The web application [community] appears to have started a thread named [lettuce-eventExecutorLoop-1-4] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
- java.base@17.0.1/jdk.internal.misc.Unsafe.park(Native Method)
- java.base@17.0.1/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
- java.base@17.0.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:506)
- java.base@17.0.1/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3463)
- java.base@17.0.1/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3434)
- java.base@17.0.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1623)
- java.base@17.0.1/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:435)
- app//io.netty.util.concurrent.SingleThreadEventExecutor.takeTask(SingleThreadEventExecutor.java:244)
- app//io.netty.util.concurrent.DefaultEventExecutor.run(DefaultEventExecutor.java:64)
- app//io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
- app//io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
- app//io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
- java.base@17.0.1/java.lang.Thread.run(Thread.java:833)
-2023-02-11 18:34:55,059 WARN [Thread-5] o.a.c.l.WebappClassLoaderBase [DirectJDKLog.java:173] The web application [community] appears to have started a thread named [lettuce-eventExecutorLoop-1-5] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
- java.base@17.0.1/jdk.internal.misc.Unsafe.park(Native Method)
- java.base@17.0.1/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
- java.base@17.0.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:506)
- java.base@17.0.1/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3463)
- java.base@17.0.1/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3434)
- java.base@17.0.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1623)
- java.base@17.0.1/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:435)
- app//io.netty.util.concurrent.SingleThreadEventExecutor.takeTask(SingleThreadEventExecutor.java:244)
- app//io.netty.util.concurrent.DefaultEventExecutor.run(DefaultEventExecutor.java:64)
- app//io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
- app//io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
- app//io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
- java.base@17.0.1/java.lang.Thread.run(Thread.java:833)
-2023-02-11 18:34:55,060 WARN [Thread-5] o.a.c.l.WebappClassLoaderBase [DirectJDKLog.java:173] The web application [community] appears to have started a thread named [lettuce-eventExecutorLoop-1-6] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
- java.base@17.0.1/jdk.internal.misc.Unsafe.park(Native Method)
- java.base@17.0.1/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
- java.base@17.0.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:506)
- java.base@17.0.1/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3463)
- java.base@17.0.1/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3434)
- java.base@17.0.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1623)
- java.base@17.0.1/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:435)
- app//io.netty.util.concurrent.SingleThreadEventExecutor.takeTask(SingleThreadEventExecutor.java:244)
- app//io.netty.util.concurrent.DefaultEventExecutor.run(DefaultEventExecutor.java:64)
- app//io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
- app//io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
- app//io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
- java.base@17.0.1/java.lang.Thread.run(Thread.java:833)
-2023-02-11 18:34:55,060 WARN [Thread-5] o.a.c.l.WebappClassLoaderBase [DirectJDKLog.java:173] The web application [community] appears to have started a thread named [lettuce-eventExecutorLoop-1-7] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
- java.base@17.0.1/jdk.internal.misc.Unsafe.park(Native Method)
- java.base@17.0.1/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
- java.base@17.0.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:506)
- java.base@17.0.1/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3463)
- java.base@17.0.1/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3434)
- java.base@17.0.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1623)
- java.base@17.0.1/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:435)
- app//io.netty.util.concurrent.SingleThreadEventExecutor.takeTask(SingleThreadEventExecutor.java:244)
- app//io.netty.util.concurrent.DefaultEventExecutor.run(DefaultEventExecutor.java:64)
- app//io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
- app//io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
- app//io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
- java.base@17.0.1/java.lang.Thread.run(Thread.java:833)
-2023-02-11 18:34:55,061 WARN [Thread-5] o.a.c.l.WebappClassLoaderBase [DirectJDKLog.java:173] The web application [community] appears to have started a thread named [lettuce-eventExecutorLoop-1-8] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
- java.base@17.0.1/jdk.internal.misc.Unsafe.park(Native Method)
- java.base@17.0.1/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
- java.base@17.0.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:506)
- java.base@17.0.1/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3463)
- java.base@17.0.1/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3434)
- java.base@17.0.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1623)
- java.base@17.0.1/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:435)
- app//io.netty.util.concurrent.SingleThreadEventExecutor.takeTask(SingleThreadEventExecutor.java:244)
- app//io.netty.util.concurrent.DefaultEventExecutor.run(DefaultEventExecutor.java:64)
- app//io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
- app//io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
- app//io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
- java.base@17.0.1/java.lang.Thread.run(Thread.java:833)
-2023-02-11 18:34:55,062 WARN [Thread-5] o.a.c.l.WebappClassLoaderBase [DirectJDKLog.java:173] The web application [community] appears to have started a thread named [lettuce-eventExecutorLoop-1-9] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
- java.base@17.0.1/jdk.internal.misc.Unsafe.park(Native Method)
- java.base@17.0.1/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
- java.base@17.0.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:506)
- java.base@17.0.1/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3463)
- java.base@17.0.1/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3434)
- java.base@17.0.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1623)
- java.base@17.0.1/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:435)
- app//io.netty.util.concurrent.SingleThreadEventExecutor.takeTask(SingleThreadEventExecutor.java:244)
- app//io.netty.util.concurrent.DefaultEventExecutor.run(DefaultEventExecutor.java:64)
- app//io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
- app//io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
- app//io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
- java.base@17.0.1/java.lang.Thread.run(Thread.java:833)
-2023-02-11 18:34:55,064 WARN [Thread-5] o.a.c.l.WebappClassLoaderBase [DirectJDKLog.java:173] The web application [community] appears to have started a thread named [lettuce-eventExecutorLoop-1-10] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
- java.base@17.0.1/jdk.internal.misc.Unsafe.park(Native Method)
- java.base@17.0.1/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
- java.base@17.0.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:506)
- java.base@17.0.1/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3463)
- java.base@17.0.1/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3434)
- java.base@17.0.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1623)
- java.base@17.0.1/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:435)
- app//io.netty.util.concurrent.SingleThreadEventExecutor.takeTask(SingleThreadEventExecutor.java:244)
- app//io.netty.util.concurrent.DefaultEventExecutor.run(DefaultEventExecutor.java:64)
- app//io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
- app//io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
- app//io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
- java.base@17.0.1/java.lang.Thread.run(Thread.java:833)
-2023-02-11 18:34:55,065 WARN [Thread-5] o.a.c.l.WebappClassLoaderBase [DirectJDKLog.java:173] The web application [community] appears to have started a thread named [lettuce-eventExecutorLoop-1-11] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
- java.base@17.0.1/jdk.internal.misc.Unsafe.park(Native Method)
- java.base@17.0.1/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
- java.base@17.0.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:506)
- java.base@17.0.1/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3463)
- java.base@17.0.1/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3434)
- java.base@17.0.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1623)
- java.base@17.0.1/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:435)
- app//io.netty.util.concurrent.SingleThreadEventExecutor.takeTask(SingleThreadEventExecutor.java:244)
- app//io.netty.util.concurrent.DefaultEventExecutor.run(DefaultEventExecutor.java:64)
- app//io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
- app//io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
- app//io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
- java.base@17.0.1/java.lang.Thread.run(Thread.java:833)
-2023-02-11 18:34:55,065 WARN [Thread-5] o.a.c.l.WebappClassLoaderBase [DirectJDKLog.java:173] The web application [community] appears to have started a thread named [lettuce-eventExecutorLoop-1-12] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
- java.base@17.0.1/jdk.internal.misc.Unsafe.park(Native Method)
- java.base@17.0.1/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
- java.base@17.0.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:506)
- java.base@17.0.1/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3463)
- java.base@17.0.1/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3434)
- java.base@17.0.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1623)
- java.base@17.0.1/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:435)
- app//io.netty.util.concurrent.SingleThreadEventExecutor.takeTask(SingleThreadEventExecutor.java:244)
- app//io.netty.util.concurrent.DefaultEventExecutor.run(DefaultEventExecutor.java:64)
- app//io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
- app//io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
- app//io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
- java.base@17.0.1/java.lang.Thread.run(Thread.java:833)
-2023-02-11 18:34:55,066 WARN [Thread-5] o.a.c.l.WebappClassLoaderBase [DirectJDKLog.java:173] The web application [community] appears to have started a thread named [lettuce-nioEventLoop-4-2] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
- java.base@17.0.1/sun.nio.ch.KQueue.poll(Native Method)
- java.base@17.0.1/sun.nio.ch.KQueueSelectorImpl.doSelect(KQueueSelectorImpl.java:122)
- java.base@17.0.1/sun.nio.ch.SelectorImpl.lockAndDoSelect(SelectorImpl.java:129)
- java.base@17.0.1/sun.nio.ch.SelectorImpl.select(SelectorImpl.java:146)
- app//io.netty.channel.nio.SelectedSelectionKeySetSelector.select(SelectedSelectionKeySetSelector.java:68)
- app//io.netty.channel.nio.NioEventLoop.select(NioEventLoop.java:879)
- app//io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:526)
- app//io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
- app//io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
- app//io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
- java.base@17.0.1/java.lang.Thread.run(Thread.java:833)
-2023-02-11 18:34:55,066 WARN [Thread-5] o.a.c.l.WebappClassLoaderBase [DirectJDKLog.java:173] The web application [community] appears to have started a thread named [lettuce-nioEventLoop-4-3] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
- java.base@17.0.1/sun.nio.ch.KQueue.poll(Native Method)
- java.base@17.0.1/sun.nio.ch.KQueueSelectorImpl.doSelect(KQueueSelectorImpl.java:122)
- java.base@17.0.1/sun.nio.ch.SelectorImpl.lockAndDoSelect(SelectorImpl.java:129)
- java.base@17.0.1/sun.nio.ch.SelectorImpl.select(SelectorImpl.java:146)
- app//io.netty.channel.nio.SelectedSelectionKeySetSelector.select(SelectedSelectionKeySetSelector.java:68)
- app//io.netty.channel.nio.NioEventLoop.select(NioEventLoop.java:879)
- app//io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:526)
- app//io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
- app//io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
- app//io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
- java.base@17.0.1/java.lang.Thread.run(Thread.java:833)
-2023-02-11 18:57:59,901 WARN [Thread-5] o.a.c.l.WebappClassLoaderBase [DirectJDKLog.java:173] The web application [community] appears to have started a thread named [HikariPool-1 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
- java.base@17.0.1/jdk.internal.misc.Unsafe.park(Native Method)
- java.base@17.0.1/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
- java.base@17.0.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1672)
- java.base@17.0.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
- java.base@17.0.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
- java.base@17.0.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
- java.base@17.0.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
- java.base@17.0.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
- java.base@17.0.1/java.lang.Thread.run(Thread.java:833)
-2023-02-11 18:57:59,902 WARN [Thread-5] o.a.c.l.WebappClassLoaderBase [DirectJDKLog.java:173] The web application [community] appears to have started a thread named [lettuce-nioEventLoop-4-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
- java.base@17.0.1/sun.nio.ch.KQueue.poll(Native Method)
- java.base@17.0.1/sun.nio.ch.KQueueSelectorImpl.doSelect(KQueueSelectorImpl.java:122)
- java.base@17.0.1/sun.nio.ch.SelectorImpl.lockAndDoSelect(SelectorImpl.java:129)
- java.base@17.0.1/sun.nio.ch.SelectorImpl.select(SelectorImpl.java:146)
- app//io.netty.channel.nio.SelectedSelectionKeySetSelector.select(SelectedSelectionKeySetSelector.java:68)
- app//io.netty.channel.nio.NioEventLoop.select(NioEventLoop.java:879)
- app//io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:526)
- app//io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
- app//io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
- app//io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
- java.base@17.0.1/java.lang.Thread.run(Thread.java:833)
-2023-02-11 18:57:59,902 WARN [Thread-5] o.a.c.l.WebappClassLoaderBase [DirectJDKLog.java:173] The web application [community] appears to have started a thread named [lettuce-eventExecutorLoop-1-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
- java.base@17.0.1/jdk.internal.misc.Unsafe.park(Native Method)
- java.base@17.0.1/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
- java.base@17.0.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:506)
- java.base@17.0.1/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3463)
- java.base@17.0.1/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3434)
- java.base@17.0.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1623)
- java.base@17.0.1/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:435)
- app//io.netty.util.concurrent.SingleThreadEventExecutor.takeTask(SingleThreadEventExecutor.java:244)
- app//io.netty.util.concurrent.DefaultEventExecutor.run(DefaultEventExecutor.java:64)
- app//io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
- app//io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
- app//io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
- java.base@17.0.1/java.lang.Thread.run(Thread.java:833)
-2023-02-11 18:57:59,903 WARN [Thread-5] o.a.c.l.WebappClassLoaderBase [DirectJDKLog.java:173] The web application [community] appears to have started a thread named [lettuce-eventExecutorLoop-1-2] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
- java.base@17.0.1/jdk.internal.misc.Unsafe.park(Native Method)
- java.base@17.0.1/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
- java.base@17.0.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:506)
- java.base@17.0.1/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3463)
- java.base@17.0.1/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3434)
- java.base@17.0.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1623)
- java.base@17.0.1/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:435)
- app//io.netty.util.concurrent.SingleThreadEventExecutor.takeTask(SingleThreadEventExecutor.java:244)
- app//io.netty.util.concurrent.DefaultEventExecutor.run(DefaultEventExecutor.java:64)
- app//io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
- app//io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
- app//io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
- java.base@17.0.1/java.lang.Thread.run(Thread.java:833)
-2023-02-11 18:57:59,904 WARN [Thread-5] o.a.c.l.WebappClassLoaderBase [DirectJDKLog.java:173] The web application [community] appears to have started a thread named [lettuce-eventExecutorLoop-1-3] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
- java.base@17.0.1/jdk.internal.misc.Unsafe.park(Native Method)
- java.base@17.0.1/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
- java.base@17.0.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:506)
- java.base@17.0.1/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3463)
- java.base@17.0.1/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3434)
- java.base@17.0.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1623)
- java.base@17.0.1/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:435)
- app//io.netty.util.concurrent.SingleThreadEventExecutor.takeTask(SingleThreadEventExecutor.java:244)
- app//io.netty.util.concurrent.DefaultEventExecutor.run(DefaultEventExecutor.java:64)
- app//io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
- app//io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
- app//io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
- java.base@17.0.1/java.lang.Thread.run(Thread.java:833)
-2023-02-11 18:57:59,906 WARN [Thread-5] o.a.c.l.WebappClassLoaderBase [DirectJDKLog.java:173] The web application [community] appears to have started a thread named [lettuce-eventExecutorLoop-1-4] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
- java.base@17.0.1/jdk.internal.misc.Unsafe.park(Native Method)
- java.base@17.0.1/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
- java.base@17.0.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:506)
- java.base@17.0.1/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3463)
- java.base@17.0.1/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3434)
- java.base@17.0.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1623)
- java.base@17.0.1/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:435)
- app//io.netty.util.concurrent.SingleThreadEventExecutor.takeTask(SingleThreadEventExecutor.java:244)
- app//io.netty.util.concurrent.DefaultEventExecutor.run(DefaultEventExecutor.java:64)
- app//io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
- app//io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
- app//io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
- java.base@17.0.1/java.lang.Thread.run(Thread.java:833)
-2023-02-11 18:57:59,907 WARN [Thread-5] o.a.c.l.WebappClassLoaderBase [DirectJDKLog.java:173] The web application [community] appears to have started a thread named [lettuce-eventExecutorLoop-1-5] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
- java.base@17.0.1/jdk.internal.misc.Unsafe.park(Native Method)
- java.base@17.0.1/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
- java.base@17.0.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:506)
- java.base@17.0.1/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3463)
- java.base@17.0.1/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3434)
- java.base@17.0.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1623)
- java.base@17.0.1/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:435)
- app//io.netty.util.concurrent.SingleThreadEventExecutor.takeTask(SingleThreadEventExecutor.java:244)
- app//io.netty.util.concurrent.DefaultEventExecutor.run(DefaultEventExecutor.java:64)
- app//io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
- app//io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
- app//io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
- java.base@17.0.1/java.lang.Thread.run(Thread.java:833)
-2023-02-11 18:57:59,907 WARN [Thread-5] o.a.c.l.WebappClassLoaderBase [DirectJDKLog.java:173] The web application [community] appears to have started a thread named [lettuce-eventExecutorLoop-1-6] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
- java.base@17.0.1/jdk.internal.misc.Unsafe.park(Native Method)
- java.base@17.0.1/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
- java.base@17.0.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:506)
- java.base@17.0.1/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3463)
- java.base@17.0.1/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3434)
- java.base@17.0.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1623)
- java.base@17.0.1/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:435)
- app//io.netty.util.concurrent.SingleThreadEventExecutor.takeTask(SingleThreadEventExecutor.java:244)
- app//io.netty.util.concurrent.DefaultEventExecutor.run(DefaultEventExecutor.java:64)
- app//io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
- app//io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
- app//io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
- java.base@17.0.1/java.lang.Thread.run(Thread.java:833)
-2023-02-11 18:57:59,908 WARN [Thread-5] o.a.c.l.WebappClassLoaderBase [DirectJDKLog.java:173] The web application [community] appears to have started a thread named [lettuce-eventExecutorLoop-1-7] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
- java.base@17.0.1/jdk.internal.misc.Unsafe.park(Native Method)
- java.base@17.0.1/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
- java.base@17.0.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:506)
- java.base@17.0.1/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3463)
- java.base@17.0.1/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3434)
- java.base@17.0.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1623)
- java.base@17.0.1/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:435)
- app//io.netty.util.concurrent.SingleThreadEventExecutor.takeTask(SingleThreadEventExecutor.java:244)
- app//io.netty.util.concurrent.DefaultEventExecutor.run(DefaultEventExecutor.java:64)
- app//io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
- app//io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
- app//io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
- java.base@17.0.1/java.lang.Thread.run(Thread.java:833)
-2023-02-11 18:57:59,909 WARN [Thread-5] o.a.c.l.WebappClassLoaderBase [DirectJDKLog.java:173] The web application [community] appears to have started a thread named [lettuce-eventExecutorLoop-1-8] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
- java.base@17.0.1/jdk.internal.misc.Unsafe.park(Native Method)
- java.base@17.0.1/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
- java.base@17.0.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:506)
- java.base@17.0.1/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3463)
- java.base@17.0.1/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3434)
- java.base@17.0.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1623)
- java.base@17.0.1/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:435)
- app//io.netty.util.concurrent.SingleThreadEventExecutor.takeTask(SingleThreadEventExecutor.java:244)
- app//io.netty.util.concurrent.DefaultEventExecutor.run(DefaultEventExecutor.java:64)
- app//io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
- app//io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
- app//io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
- java.base@17.0.1/java.lang.Thread.run(Thread.java:833)
-2023-02-11 18:57:59,909 WARN [Thread-5] o.a.c.l.WebappClassLoaderBase [DirectJDKLog.java:173] The web application [community] appears to have started a thread named [lettuce-eventExecutorLoop-1-9] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
- java.base@17.0.1/jdk.internal.misc.Unsafe.park(Native Method)
- java.base@17.0.1/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
- java.base@17.0.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:506)
- java.base@17.0.1/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3463)
- java.base@17.0.1/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3434)
- java.base@17.0.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1623)
- java.base@17.0.1/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:435)
- app//io.netty.util.concurrent.SingleThreadEventExecutor.takeTask(SingleThreadEventExecutor.java:244)
- app//io.netty.util.concurrent.DefaultEventExecutor.run(DefaultEventExecutor.java:64)
- app//io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
- app//io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
- app//io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
- java.base@17.0.1/java.lang.Thread.run(Thread.java:833)
-2023-02-11 18:57:59,910 WARN [Thread-5] o.a.c.l.WebappClassLoaderBase [DirectJDKLog.java:173] The web application [community] appears to have started a thread named [lettuce-eventExecutorLoop-1-10] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
- java.base@17.0.1/jdk.internal.misc.Unsafe.park(Native Method)
- java.base@17.0.1/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
- java.base@17.0.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:506)
- java.base@17.0.1/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3463)
- java.base@17.0.1/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3434)
- java.base@17.0.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1623)
- java.base@17.0.1/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:435)
- app//io.netty.util.concurrent.SingleThreadEventExecutor.takeTask(SingleThreadEventExecutor.java:244)
- app//io.netty.util.concurrent.DefaultEventExecutor.run(DefaultEventExecutor.java:64)
- app//io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
- app//io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
- app//io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
- java.base@17.0.1/java.lang.Thread.run(Thread.java:833)
-2023-02-11 18:57:59,911 WARN [Thread-5] o.a.c.l.WebappClassLoaderBase [DirectJDKLog.java:173] The web application [community] appears to have started a thread named [lettuce-eventExecutorLoop-1-11] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
- java.base@17.0.1/jdk.internal.misc.Unsafe.park(Native Method)
- java.base@17.0.1/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
- java.base@17.0.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:506)
- java.base@17.0.1/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3463)
- java.base@17.0.1/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3434)
- java.base@17.0.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1623)
- java.base@17.0.1/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:435)
- app//io.netty.util.concurrent.SingleThreadEventExecutor.takeTask(SingleThreadEventExecutor.java:244)
- app//io.netty.util.concurrent.DefaultEventExecutor.run(DefaultEventExecutor.java:64)
- app//io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
- app//io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
- app//io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
- java.base@17.0.1/java.lang.Thread.run(Thread.java:833)
-2023-02-11 18:57:59,911 WARN [Thread-5] o.a.c.l.WebappClassLoaderBase [DirectJDKLog.java:173] The web application [community] appears to have started a thread named [lettuce-eventExecutorLoop-1-12] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
- java.base@17.0.1/jdk.internal.misc.Unsafe.park(Native Method)
- java.base@17.0.1/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
- java.base@17.0.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:506)
- java.base@17.0.1/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3463)
- java.base@17.0.1/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3434)
- java.base@17.0.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1623)
- java.base@17.0.1/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:435)
- app//io.netty.util.concurrent.SingleThreadEventExecutor.takeTask(SingleThreadEventExecutor.java:244)
- app//io.netty.util.concurrent.DefaultEventExecutor.run(DefaultEventExecutor.java:64)
- app//io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
- app//io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
- app//io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
- java.base@17.0.1/java.lang.Thread.run(Thread.java:833)
-2023-02-11 19:13:44,446 WARN [HikariPool-1 housekeeper] c.z.h.p.HikariPool [HikariPool.java:804] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4m18s276ms).
+2023-02-14 16:23:28,711 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:775] [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-02-14 16:23:28,712 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:1065] [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-02-14 16:23:28,810 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:775] [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-02-14 16:23:28,811 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:1065] [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-02-14 16:23:28,912 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:775] [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-02-14 16:23:28,912 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:1065] [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-02-14 16:23:28,936 WARN [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:775] [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-02-14 16:23:28,936 WARN [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:1065] [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-02-14 16:23:29,038 WARN [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:775] [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-02-14 16:23:29,038 WARN [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:1065] [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-02-14 16:23:29,115 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:775] [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-02-14 16:23:29,115 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:1065] [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-02-14 16:23:29,191 WARN [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:775] [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-02-14 16:23:29,192 WARN [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:1065] [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-02-14 16:23:29,401 WARN [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:775] [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-02-14 16:23:29,402 WARN [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:1065] [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-02-14 16:23:29,470 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:775] [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-02-14 16:23:29,471 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:1065] [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-02-14 16:23:29,865 WARN [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:775] [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-02-14 16:23:29,866 WARN [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:1065] [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-02-14 16:23:30,385 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:775] [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-02-14 16:23:30,385 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:1065] [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-02-14 16:23:30,632 WARN [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:775] [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-02-14 16:23:30,632 WARN [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:1065] [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-02-14 16:23:31,400 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:775] [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-02-14 16:23:31,400 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:1065] [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-02-14 16:23:31,806 WARN [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:775] [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-02-14 16:23:31,807 WARN [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:1065] [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-02-14 16:23:32,517 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:775] [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-02-14 16:23:32,517 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:1065] [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-02-14 16:23:32,722 WARN [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:775] [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-02-14 16:23:32,722 WARN [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:1065] [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-02-14 16:23:33,372 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:775] [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-02-14 16:23:33,372 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:1065] [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-02-14 16:23:33,891 WARN [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:775] [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-02-14 16:23:33,891 WARN [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:1065] [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-02-14 16:23:34,535 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:775] [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-02-14 16:23:34,535 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:1065] [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-02-14 16:23:35,110 WARN [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:775] [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-02-14 16:23:35,110 WARN [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:1065] [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-02-14 16:23:35,445 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:775] [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-02-14 16:23:35,445 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:1065] [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-02-14 16:23:36,280 WARN [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:775] [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-02-14 16:23:36,281 WARN [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:1065] [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-02-14 16:23:36,462 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:775] [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-02-14 16:23:36,462 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:1065] [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-02-14 16:23:37,402 WARN [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:775] [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-02-14 16:23:37,402 WARN [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:1065] [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-02-14 16:23:37,531 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:775] [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-02-14 16:23:37,531 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:1065] [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-02-14 16:23:38,221 WARN [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:775] [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-02-14 16:23:38,221 WARN [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:1065] [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-02-14 16:23:38,732 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:775] [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-02-14 16:23:38,732 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:1065] [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-02-14 16:23:39,402 WARN [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:775] [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-02-14 16:23:39,402 WARN [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:1065] [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-02-14 16:23:39,656 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:775] [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-02-14 16:23:39,656 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:1065] [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-02-14 16:23:40,371 WARN [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:775] [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-02-14 16:23:40,371 WARN [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:1065] [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-02-14 16:23:40,576 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:775] [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-02-14 16:23:40,576 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:1065] [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-02-14 16:23:41,493 WARN [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:775] [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-02-14 16:23:41,493 WARN [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:1065] [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-02-14 16:23:41,695 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:775] [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-02-14 16:23:41,695 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:1065] [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-02-14 16:23:42,460 WARN [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:775] [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-02-14 16:23:42,461 WARN [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:1065] [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-02-14 16:23:42,868 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:775] [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-02-14 16:23:42,869 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:1065] [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-02-14 16:23:43,430 WARN [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:775] [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-02-14 16:23:43,430 WARN [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:1065] [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-02-14 16:23:43,785 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:775] [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-02-14 16:23:43,785 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:1065] [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-02-14 16:23:44,607 WARN [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:775] [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-02-14 16:23:44,607 WARN [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:1065] [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-02-14 16:23:44,856 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:775] [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-02-14 16:23:44,856 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:1065] [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-02-14 16:23:45,781 WARN [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:775] [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-02-14 16:23:45,781 WARN [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:1065] [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-02-14 16:23:45,976 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:775] [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-02-14 16:23:45,976 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:1065] [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-02-14 16:23:46,746 WARN [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:775] [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-02-14 16:23:46,746 WARN [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:1065] [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-02-14 16:23:47,095 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:775] [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-02-14 16:23:47,095 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:1065] [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-02-14 16:23:47,812 WARN [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:775] [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-02-14 16:23:47,812 WARN [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:1065] [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-02-14 16:23:54,721 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:775] [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-02-14 16:23:54,721 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:1065] [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-02-14 16:23:54,826 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:775] [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-02-14 16:23:54,827 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:1065] [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-02-14 16:23:54,915 WARN [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:775] [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-02-14 16:23:54,916 WARN [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:1065] [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-02-14 16:23:54,925 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:775] [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-02-14 16:23:54,925 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:1065] [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-02-14 16:23:55,018 WARN [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:775] [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-02-14 16:23:55,018 WARN [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:1065] [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-02-14 16:23:55,123 WARN [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:775] [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-02-14 16:23:55,123 WARN [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:1065] [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-02-14 16:23:55,178 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:775] [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-02-14 16:23:55,179 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:1065] [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-02-14 16:23:55,331 WARN [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:775] [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-02-14 16:23:55,331 WARN [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:1065] [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-02-14 16:23:55,586 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:775] [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-02-14 16:23:55,586 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:1065] [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-02-14 16:23:55,743 WARN [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:775] [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-02-14 16:23:55,744 WARN [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:1065] [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-02-14 16:23:56,301 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:775] [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-02-14 16:23:56,301 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:1065] [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-02-14 16:23:56,561 WARN [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:775] [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-02-14 16:23:56,562 WARN [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:1065] [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-02-14 16:23:57,420 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:775] [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-02-14 16:23:57,420 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:1065] [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-02-14 16:23:57,784 WARN [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:775] [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-02-14 16:23:57,784 WARN [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:1065] [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-02-14 16:23:58,286 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:775] [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-02-14 16:23:58,286 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:1065] [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-02-14 16:23:58,798 WARN [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:775] [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-02-14 16:23:58,799 WARN [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:1065] [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-02-14 16:23:59,251 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:775] [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-02-14 16:23:59,251 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:1065] [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-02-14 16:23:59,815 WARN [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:775] [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-02-14 16:23:59,815 WARN [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:1065] [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-02-14 16:24:00,307 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:775] [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-02-14 16:24:00,307 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:1065] [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-02-14 16:24:00,731 WARN [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:775] [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-02-14 16:24:00,731 WARN [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:1065] [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-02-14 16:24:01,269 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:775] [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-02-14 16:24:01,269 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:1065] [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-02-14 16:24:01,745 WARN [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:775] [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-02-14 16:24:01,745 WARN [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:1065] [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-02-14 16:24:02,287 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:775] [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-02-14 16:24:02,288 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:1065] [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-02-14 16:24:02,614 WARN [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:775] [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-02-14 16:24:02,614 WARN [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:1065] [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-02-14 16:24:03,303 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:775] [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-02-14 16:24:03,303 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:1065] [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-02-14 16:24:03,635 WARN [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:775] [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-02-14 16:24:03,635 WARN [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:1065] [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-02-14 16:24:04,272 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:775] [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-02-14 16:24:04,272 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:1065] [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-02-14 16:24:04,805 WARN [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:775] [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-02-14 16:24:04,806 WARN [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:1065] [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-02-14 16:24:05,413 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:775] [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-02-14 16:24:05,413 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:1065] [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-02-14 16:24:05,777 WARN [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:775] [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-02-14 16:24:05,778 WARN [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:1065] [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-02-14 16:24:06,280 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:775] [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-02-14 16:24:06,280 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:1065] [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-02-14 16:24:06,647 WARN [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:775] [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-02-14 16:24:06,647 WARN [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:1065] [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-02-14 16:24:07,347 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:775] [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-02-14 16:24:07,347 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:1065] [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-02-14 16:24:07,568 WARN [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:775] [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-02-14 16:24:07,568 WARN [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:1065] [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-02-14 16:24:08,418 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:775] [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-02-14 16:24:08,419 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:1065] [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-02-14 16:24:08,795 WARN [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:775] [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-02-14 16:24:08,795 WARN [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:1065] [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-02-14 16:24:09,283 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:775] [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-02-14 16:24:09,283 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:1065] [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-02-14 16:24:09,815 WARN [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:775] [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-02-14 16:24:09,815 WARN [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:1065] [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-02-14 16:24:10,415 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:775] [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-02-14 16:24:10,415 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:1065] [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-02-14 16:24:10,888 WARN [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:775] [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-02-14 16:24:10,889 WARN [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:1065] [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-02-14 16:24:11,381 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:775] [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-02-14 16:24:11,381 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:1065] [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-02-14 16:24:11,863 WARN [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:775] [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-02-14 16:24:11,863 WARN [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:1065] [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-02-14 16:24:12,553 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:775] [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-02-14 16:24:12,553 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:1065] [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-02-14 16:24:12,831 WARN [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:775] [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-02-14 16:24:12,831 WARN [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:1065] [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-02-14 16:24:13,421 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:775] [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-02-14 16:24:13,421 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:1065] [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-02-14 16:24:13,852 WARN [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:775] [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-02-14 16:24:13,852 WARN [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:1065] [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-02-14 16:24:14,338 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:775] [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-02-14 16:24:14,338 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:1065] [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-02-14 16:24:14,974 WARN [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:775] [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-02-14 16:24:14,974 WARN [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:1065] [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-02-14 16:24:15,363 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:775] [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-02-14 16:24:15,363 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:1065] [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-02-14 16:24:15,846 WARN [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:775] [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-02-14 16:24:15,846 WARN [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:1065] [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-02-14 16:24:16,232 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:775] [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-02-14 16:24:16,232 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:1065] [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-02-14 16:24:16,666 WARN [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:775] [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-02-14 16:24:16,666 WARN [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:1065] [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-02-14 16:24:17,398 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:775] [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-02-14 16:24:17,398 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:1065] [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-02-14 16:24:17,683 WARN [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:775] [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-02-14 16:24:17,683 WARN [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:1065] [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-02-14 16:24:18,464 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:775] [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-02-14 16:24:18,464 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:1065] [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-02-14 16:24:18,804 WARN [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:775] [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-02-14 16:24:18,804 WARN [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:1065] [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-02-14 16:24:19,530 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:775] [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-02-14 16:24:19,530 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:1065] [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-02-14 16:24:19,771 WARN [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:775] [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-02-14 16:24:19,771 WARN [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:1065] [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-02-14 16:24:20,540 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:775] [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-02-14 16:24:20,541 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:1065] [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-02-14 16:24:20,839 WARN [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:775] [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-02-14 16:24:20,839 WARN [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:1065] [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-02-14 16:24:21,703 WARN [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:775] [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-02-14 16:24:21,703 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:775] [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-02-14 16:24:21,703 WARN [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:1065] [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-02-14 16:24:21,703 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:1065] [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-02-14 16:24:22,561 WARN [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:775] [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-02-14 16:24:22,561 WARN [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:1065] [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-02-14 16:24:22,813 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:775] [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-02-14 16:24:22,813 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:1065] [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-02-14 16:24:23,626 WARN [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:775] [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-02-14 16:24:23,627 WARN [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:1065] [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-02-14 16:24:23,776 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:775] [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-02-14 16:24:23,777 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:1065] [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-02-14 16:24:24,490 WARN [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:775] [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-02-14 16:24:24,490 WARN [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:1065] [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-02-14 16:24:24,704 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:775] [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-02-14 16:24:24,704 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:1065] [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-02-14 16:24:25,612 WARN [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:775] [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-02-14 16:24:25,612 WARN [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:1065] [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-02-14 16:24:25,617 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:775] [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-02-14 16:24:25,617 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:1065] [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-02-14 16:24:26,577 WARN [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:775] [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-02-14 16:24:26,577 WARN [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:1065] [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-02-14 16:24:26,784 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:775] [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-02-14 16:24:26,784 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:1065] [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-02-14 16:24:27,496 WARN [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:775] [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-02-14 16:24:27,496 WARN [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:1065] [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-02-14 16:24:27,647 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:775] [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-02-14 16:24:27,647 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:1065] [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-02-14 16:24:28,514 WARN [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:775] [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-02-14 16:24:28,514 WARN [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:1065] [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-02-14 16:24:28,655 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:775] [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-02-14 16:24:28,656 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:1065] [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-02-14 16:24:29,525 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:775] [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-02-14 16:24:29,525 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:1065] [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-02-14 16:24:29,529 WARN [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:775] [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-02-14 16:24:29,529 WARN [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:1065] [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-02-14 16:24:30,546 WARN [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:775] [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-02-14 16:24:30,546 WARN [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:1065] [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-02-14 16:24:30,741 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:775] [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-02-14 16:24:30,741 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:1065] [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-02-14 16:24:31,560 WARN [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:775] [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-02-14 16:24:31,560 WARN [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:1065] [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-02-14 16:24:31,655 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:775] [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-02-14 16:24:31,655 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:1065] [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-02-14 16:24:32,668 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:775] [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-02-14 16:24:32,668 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:1065] [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-02-14 16:24:32,680 WARN [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:775] [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-02-14 16:24:32,680 WARN [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:1065] [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-02-14 16:24:33,737 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:775] [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-02-14 16:24:33,737 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:1065] [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-02-14 16:24:33,850 WARN [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:775] [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-02-14 16:24:33,851 WARN [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:1065] [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-02-14 16:24:34,603 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:775] [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-02-14 16:24:34,604 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:1065] [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-02-14 16:24:34,970 WARN [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:775] [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-02-14 16:24:34,971 WARN [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:1065] [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-02-14 16:24:35,670 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:775] [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-02-14 16:24:35,670 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:1065] [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-02-14 16:24:35,838 WARN [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:775] [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-02-14 16:24:35,838 WARN [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:1065] [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-02-14 16:24:36,653 WARN [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:775] [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-02-14 16:24:36,653 WARN [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:1065] [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-02-14 16:24:36,841 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:775] [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-02-14 16:24:36,841 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:1065] [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-02-14 16:24:37,624 WARN [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:775] [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-02-14 16:24:37,624 WARN [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:1065] [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-02-14 16:24:37,754 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:775] [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-02-14 16:24:37,754 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:1065] [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-02-14 16:24:38,717 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:775] [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-02-14 16:24:38,717 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:1065] [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-02-14 16:24:38,792 WARN [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:775] [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-02-14 16:24:38,792 WARN [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:1065] [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-02-14 16:24:39,553 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:775] [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-02-14 16:24:39,553 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:1065] [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-02-14 16:24:39,959 WARN [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:775] [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-02-14 16:24:39,959 WARN [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:1065] [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-02-14 16:24:40,417 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:775] [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-02-14 16:24:40,417 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:1065] [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-02-14 16:24:41,075 WARN [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:775] [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-02-14 16:24:41,075 WARN [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:1065] [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-02-14 16:24:41,382 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:775] [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-02-14 16:24:41,382 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:1065] [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-02-14 16:24:42,194 WARN [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:775] [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-02-14 16:24:42,194 WARN [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:1065] [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-02-14 16:24:42,345 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:775] [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-02-14 16:24:42,346 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:1065] [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-02-14 16:24:43,212 WARN [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:775] [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-02-14 16:24:43,212 WARN [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:1065] [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-02-14 16:24:43,514 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:775] [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-02-14 16:24:43,514 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:1065] [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-02-14 16:24:44,077 WARN [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:775] [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-02-14 16:24:44,077 WARN [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:1065] [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-02-14 16:24:44,658 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:775] [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-02-14 16:24:44,658 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:1065] [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-02-14 16:24:45,193 WARN [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:775] [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-02-14 16:24:45,194 WARN [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:1065] [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-02-14 16:24:45,620 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:775] [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-02-14 16:24:45,620 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:1065] [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-02-14 16:24:46,208 WARN [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:775] [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-02-14 16:24:46,208 WARN [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:1065] [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-02-14 16:24:46,633 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:775] [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-02-14 16:24:46,633 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:1065] [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-02-14 16:24:47,126 WARN [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:775] [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-02-14 16:24:47,126 WARN [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:1065] [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-02-14 16:24:47,443 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:775] [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-02-14 16:24:47,444 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:1065] [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-02-14 16:24:48,042 WARN [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:775] [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-02-14 16:24:48,042 WARN [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:1065] [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-02-14 16:24:48,253 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:775] [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-02-14 16:24:48,253 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:1065] [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-02-14 16:24:48,958 WARN [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:775] [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-02-14 16:24:48,958 WARN [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:1065] [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-02-14 16:24:49,214 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:775] [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-02-14 16:24:49,214 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:1065] [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-02-14 16:24:50,186 WARN [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:775] [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-02-14 16:24:50,186 WARN [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:1065] [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-02-14 16:24:50,318 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:775] [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-02-14 16:24:50,318 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:1065] [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-02-14 16:24:51,284 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:775] [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-02-14 16:24:51,284 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:1065] [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-02-14 16:24:51,362 WARN [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:775] [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-02-14 16:24:51,362 WARN [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:1065] [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-02-14 16:24:52,143 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:775] [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-02-14 16:24:52,143 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:1065] [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-02-14 16:24:52,578 WARN [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:775] [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2023-02-14 16:24:52,578 WARN [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:1065] [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2023-02-14 16:24:53,289 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:1105] [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Error while fetching metadata with correlation id 2 : {test=LEADER_NOT_AVAILABLE}
+2023-02-14 16:24:53,388 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:1105] [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Error while fetching metadata with correlation id 5 : {test=LEADER_NOT_AVAILABLE}
+2023-02-14 16:24:53,491 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:1105] [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Error while fetching metadata with correlation id 7 : {test=LEADER_NOT_AVAILABLE}
+2023-02-14 16:24:53,596 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:1105] [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Error while fetching metadata with correlation id 9 : {test=LEADER_NOT_AVAILABLE}
+2023-02-14 16:24:53,700 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:1105] [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Error while fetching metadata with correlation id 11 : {test=LEADER_NOT_AVAILABLE}
+2023-02-14 16:24:53,795 WARN [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:1105] [Producer clientId=producer-1] Error while fetching metadata with correlation id 1 : {test=LEADER_NOT_AVAILABLE}
+2023-02-14 16:24:53,806 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:1105] [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Error while fetching metadata with correlation id 13 : {test=LEADER_NOT_AVAILABLE}
+2023-02-14 16:24:53,910 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:1105] [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Error while fetching metadata with correlation id 15 : {test=LEADER_NOT_AVAILABLE}
+2023-02-14 16:24:53,922 WARN [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:1105] [Producer clientId=producer-1] Error while fetching metadata with correlation id 4 : {test=LEADER_NOT_AVAILABLE}
+2023-02-14 16:24:54,014 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:1105] [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Error while fetching metadata with correlation id 17 : {test=LEADER_NOT_AVAILABLE}
+2023-02-14 16:24:54,026 WARN [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:1105] [Producer clientId=producer-1] Error while fetching metadata with correlation id 5 : {test=LEADER_NOT_AVAILABLE}
+2023-02-14 16:24:54,119 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:1105] [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Error while fetching metadata with correlation id 19 : {test=LEADER_NOT_AVAILABLE}
+2023-02-14 16:24:54,129 WARN [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:1105] [Producer clientId=producer-1] Error while fetching metadata with correlation id 6 : {test=LEADER_NOT_AVAILABLE}
+2023-02-14 16:24:54,223 WARN [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.NetworkClient [NetworkClient.java:1105] [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Error while fetching metadata with correlation id 21 : {test=LEADER_NOT_AVAILABLE}
+2023-02-14 16:24:54,235 WARN [kafka-producer-network-thread | producer-1] o.a.k.c.NetworkClient [NetworkClient.java:1105] [Producer clientId=producer-1] Error while fetching metadata with correlation id 7 : {test=LEADER_NOT_AVAILABLE}
