@@ -1,7 +1,9 @@
 package io.github.jiajun2001.community.community.controller;
 
+import io.github.jiajun2001.community.community.entity.Event;
 import io.github.jiajun2001.community.community.entity.Page;
 import io.github.jiajun2001.community.community.entity.User;
+import io.github.jiajun2001.community.community.event.EventProducer;
 import io.github.jiajun2001.community.community.service.FollowService;
 import io.github.jiajun2001.community.community.service.UserService;
 import io.github.jiajun2001.community.community.util.CommunityConstant;
@@ -30,12 +32,24 @@ public class FollowController implements CommunityConstant{
     @Autowired
     private UserService userService;
 
+    @Autowired
+    private EventProducer eventProducer;
+
     @RequestMapping(path = "/follow", method = RequestMethod.POST)
     @ResponseBody
     public String follow(int entityType, int entityId) {
         User user = hostHolder.getUser();
 
         followService.follow(user.getId(), entityType, entityId);
+
+        // Send system notification
+        Event event = new Event()
+                .setTopic(TOPIC_FOLLOW)
+                .setUserId(hostHolder.getUser().getId())
+                .setEntityType(entityType)
+                .setEntityId(entityId)
+                .setEntityUserId(entityId);
+        eventProducer.fireEvent(event);
 
         return CommunityUtil.getJSONString(0, "Followed!");
     }
