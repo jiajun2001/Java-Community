@@ -167,7 +167,8 @@
 												<div>
 													<input type="text" class="input-size" th:placeholder="|Reply to ${rvo.user.username}|" name="content"/>
 													<input type="hidden" name="entityType" value="2">
-													<input type="hidden" name="entityId" th:value="${cvo.comment.id}">
+<!--													ERROR-->
+													<input type="hidden" name="entityId" th:value="${rvo.reply.entityId}">
 													<input type="hidden" name="targetId" th:value="${rvo.user.id}">
 												</div>
 												<div class="text-right mt-2">

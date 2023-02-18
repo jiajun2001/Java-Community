@@ -89,7 +89,7 @@
 								th:text="${#dates.format(commentNotice.message.createTime, 'yyyy-MM-dd HH:mm:ss')}">2019-04-28 14:13:25</span>
 							</h6>
 							<div>
-								<a href="#">
+								<a th:href="@{/notice/detail/comment}">
 									User
 									<i th:utext="${commentNotice.user.username}">nowcoder</i> made a comment on your
 									<b th:text="${commentNotice.entityType==1?'post':'reply'}">type</b> ...</a>
@@ -110,7 +110,7 @@
 							  	th:text="${#dates.format(likeNotice.message.createTime, 'yyyy-MM-dd HH:mm:ss')}">2019-04-28 14:13:25</span>
 							</h6>
 							<div>
-								<a href="#">
+								<a th:href="@{/notice/detail/like}">
 									User
 									<i th:utext="${likeNotice.user.username}">nowcoder</i>
 									liked your
@@ -133,7 +133,7 @@
 									2019-04-28 14:13:25</span>
 							</h6>
 							<div>
-								<a href="#">
+								<a th:href="@{/notice/detail/follow}">
 									User
 									<i th:utext="${followNotice.user.username}">nowcoder</i>
 									followed you ...</a>
