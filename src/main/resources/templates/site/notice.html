@@ -1,18 +1,18 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="icon" href="https://static.nowcoder.com/images/logo_87_87.png"/>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" crossorigin="anonymous">
-	<link rel="stylesheet" href="../css/global.css" />
-	<link rel="stylesheet" href="../css/letter.css" />
-	<title>牛客网-通知</title>
+	<link rel="stylesheet" th:href="@{/css/global.css}" />
+	<link rel="stylesheet" th:href="@{/css/letter.css}" />
+	<title>Adelaide CS Community - System Notifications</title>
 </head>
 <body>
 	<div class="nk-container">
 		<!-- 头部 -->
-		<header class="bg-dark sticky-top">
+		<header class="bg-dark sticky-top" th:replace="~{index::header}">
 			<div class="container">
 				<!-- 导航 -->
 				<nav class="navbar navbar-expand-lg navbar-dark">
@@ -66,134 +66,153 @@
 					<!-- 选项 -->
 					<ul class="nav nav-tabs mb-3">
 						<li class="nav-item">
-							<a class="nav-link position-relative" href="letter.html">朋友私信<span class="badge badge-danger">3</span></a>
+							<a class="nav-link position-relative" th:href="@{/message/list}">
+								User Message<span class="badge badge-danger" th:text="${messageUnreadCount}" th:if="${messageUnreadCount!=0}">3</span></a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link position-relative active" href="notice.html">系统通知<span class="badge badge-danger">27</span></a>
+							<a class="nav-link position-relative active" th:href="@{/notice/list}">
+								System Notification<span class="badge badge-danger" th:text="${noticeUnreadCount}" th:if="${noticeUnreadCount!=0}">27</span></a>
 						</li>
 					</ul>
 				</div>	
 				
 				<!-- 通知列表 -->
 				<ul class="list-unstyled">
-					<li class="media pb-3 pt-3 mb-3 border-bottom position-relative">
-						<span class="badge badge-danger">3</span>
-						<img src="http://static.nowcoder.com/images/head/reply.png" class="mr-4 user-header" alt="通知图标">
+<!--					Comment type-->
+					<li class="media pb-3 pt-3 mb-3 border-bottom position-relative" th:if="${commentNotice!=null}">
+						<span class="badge badge-danger" th:text="${commentNotice.unread!=0?commentNotice.unread:''}">3</span>
+						<img src="http://static.nowcoder.com/images/head/reply.png" class="mr-4 user-header" alt="notification icon">
 						<div class="media-body">
 							<h6 class="mt-0 mb-3">
-								<span>评论</span>
-								<span class="float-right text-muted font-size-12">2019-04-28 14:13:25</span>
+								<span>Comment</span>
+								<span class="float-right text-muted font-size-12"
+								th:text="${#dates.format(commentNotice.message.createTime, 'yyyy-MM-dd HH:mm:ss')}">2019-04-28 14:13:25</span>
 							</h6>
 							<div>
-								<a href="notice-detail.html">用户 <i>nowcoder</i> 评论了你的<b>帖子</b> ...</a>
+								<a href="#">
+									User
+									<i th:utext="${commentNotice.user.username}">nowcoder</i> made a comment on your
+									<b th:text="${commentNotice.entityType==1?'post':'reply'}">type</b> ...</a>
 								<ul class="d-inline font-size-12 float-right">
-									<li class="d-inline ml-2"><span class="text-primary">共 <i>3</i> 条会话</span></li>
+									<li class="d-inline ml-2"><span class="text-primary"><i th:text="${commentNotice.count}">3</i> notification(s) in total</span></li>
 								</ul>
 							</div>
 						</div>
 					</li>
-					<li class="media pb-3 pt-3 mb-3 border-bottom position-relative">
-						<span class="badge badge-danger">3</span>
-						<img src="http://static.nowcoder.com/images/head/like.png" class="mr-4 user-header" alt="通知图标">
+<!--					Like type-->
+					<li class="media pb-3 pt-3 mb-3 border-bottom position-relative" th:if="${likeNotice!=null}">
+						<span class="badge badge-danger" th:text="${likeNotice.unread!=0?likeNotice.unread:''}">3</span>
+						<img src="http://static.nowcoder.com/images/head/like.png" class="mr-4 user-header" alt="notification icon">
 						<div class="media-body">
 							<h6 class="mt-0 mb-3">
-								<span>赞</span>
-								<span class="float-right text-muted font-size-12">2019-04-28 14:13:25</span>
+								<span>Like</span>
+								<span class="float-right text-muted font-size-12"
+							  	th:text="${#dates.format(likeNotice.message.createTime, 'yyyy-MM-dd HH:mm:ss')}">2019-04-28 14:13:25</span>
 							</h6>
 							<div>
-								<a href="notice-detail.html">用户 <i>nowcoder</i> 点赞了你的<b>帖子</b> ...</a>
+								<a href="#">
+									User
+									<i th:utext="${likeNotice.user.username}">nowcoder</i>
+									liked your
+									<b th:text="${likeNotice.entityType==1?'post':'reply'}">type</b> ...</a>
 								<ul class="d-inline font-size-12 float-right">
-									<li class="d-inline ml-2"><span class="text-primary">共 <i>3</i> 条会话</span></li>
+									<li class="d-inline ml-2"><span class="text-primary"><i th:text="${likeNotice.count}">3</i> notification(s) in total</span></li>
 								</ul>
 							</div>
 						</div>
 					</li>
-					<li class="media pb-3 pt-3 mb-3 border-bottom position-relative">
-						<span class="badge badge-danger">3</span>
-						<img src="http://static.nowcoder.com/images/head/follow.png" class="mr-4 user-header" alt="通知图标">
+<!--					Follow type-->
+					<li class="media pb-3 pt-3 mb-3 border-bottom position-relative" th:if="${followNotice!=null}">
+						<span class="badge badge-danger" th:text="${followNotice.unread!=0?followNotice.unread:''}">3</span>
+						<img src="http://static.nowcoder.com/images/head/follow.png" class="mr-4 user-header" alt="notification icon">
 						<div class="media-body">
 							<h6 class="mt-0 mb-3">
-								<span>关注</span>
-								<span class="float-right text-muted font-size-12">2019-04-28 14:13:25</span>
+								<span>Follow</span>
+								<span class="float-right text-muted font-size-12"
+							  	th:text="${#dates.format(followNotice.message.createTime, 'yyyy-MM-dd HH:mm:ss')}">
+									2019-04-28 14:13:25</span>
 							</h6>
 							<div>
-								<a href="notice-detail.html">用户 <i>nowcoder</i> 关注了你 ...</a>
+								<a href="#">
+									User
+									<i th:utext="${followNotice.user.username}">nowcoder</i>
+									followed you ...</a>
 								<ul class="d-inline font-size-12 float-right">
-									<li class="d-inline ml-2"><span class="text-primary">共 <i>3</i> 条会话</span></li>
+									<li class="d-inline ml-2"><span class="text-primary"><i th:text="${followNotice.count}">3</i> notification(s) in total</span></li>
 								</ul>
 							</div>
 						</div>
-					</li>					
+					</li>
 				</ul>
 			</div>
 		</div>
 
 		<!-- 尾部 -->
-		<footer class="bg-dark">
-			<div class="container">
-				<div class="row">
-					<!-- 二维码 -->
-					<div class="col-4 qrcode">
-						<img src="https://uploadfiles.nowcoder.com/app/app_download.png" class="img-thumbnail" style="width:136px;" />
-					</div>
-					<!-- 公司信息 -->
-					<div class="col-8 detail-info">
-						<div class="row">
-							<div class="col">
-								<ul class="nav">
-									<li class="nav-item">
-										<a class="nav-link text-light" href="#">关于我们</a>
-									</li>
-									<li class="nav-item">
-										<a class="nav-link text-light" href="#">加入我们</a>
-									</li>
-									<li class="nav-item">
-										<a class="nav-link text-light" href="#">意见反馈</a>
-									</li>
-									<li class="nav-item">
-										<a class="nav-link text-light" href="#">企业服务</a>
-									</li>
-									<li class="nav-item">
-										<a class="nav-link text-light" href="#">联系我们</a>
-									</li>
-									<li class="nav-item">
-										<a class="nav-link text-light" href="#">免责声明</a>
-									</li>
-									<li class="nav-item">
-										<a class="nav-link text-light" href="#">友情链接</a>
-									</li>
-								</ul>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col">
-								<ul class="nav btn-group-vertical company-info">
-									<li class="nav-item text-white-50">
-										公司地址：北京市朝阳区大屯路东金泉时代3-2708北京牛客科技有限公司
-									</li>
-									<li class="nav-item text-white-50">
-										联系方式：010-60728802(电话)&nbsp;&nbsp;&nbsp;&nbsp;admin@nowcoder.com
-									</li>
-									<li class="nav-item text-white-50">
-										牛客科技©2018 All rights reserved
-									</li>
-									<li class="nav-item text-white-50">
-										京ICP备14055008号-4 &nbsp;&nbsp;&nbsp;&nbsp;
-										<img src="http://static.nowcoder.com/company/images/res/ghs.png" style="width:18px;" />
-										京公网安备 11010502036488号
-									</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</footer>
+<!--		<footer class="bg-dark">-->
+<!--			<div class="container">-->
+<!--				<div class="row">-->
+<!--					&lt;!&ndash; 二维码 &ndash;&gt;-->
+<!--					<div class="col-4 qrcode">-->
+<!--						<img src="https://uploadfiles.nowcoder.com/app/app_download.png" class="img-thumbnail" style="width:136px;" />-->
+<!--					</div>-->
+<!--					&lt;!&ndash; 公司信息 &ndash;&gt;-->
+<!--					<div class="col-8 detail-info">-->
+<!--						<div class="row">-->
+<!--							<div class="col">-->
+<!--								<ul class="nav">-->
+<!--									<li class="nav-item">-->
+<!--										<a class="nav-link text-light" href="#">关于我们</a>-->
+<!--									</li>-->
+<!--									<li class="nav-item">-->
+<!--										<a class="nav-link text-light" href="#">加入我们</a>-->
+<!--									</li>-->
+<!--									<li class="nav-item">-->
+<!--										<a class="nav-link text-light" href="#">意见反馈</a>-->
+<!--									</li>-->
+<!--									<li class="nav-item">-->
+<!--										<a class="nav-link text-light" href="#">企业服务</a>-->
+<!--									</li>-->
+<!--									<li class="nav-item">-->
+<!--										<a class="nav-link text-light" href="#">联系我们</a>-->
+<!--									</li>-->
+<!--									<li class="nav-item">-->
+<!--										<a class="nav-link text-light" href="#">免责声明</a>-->
+<!--									</li>-->
+<!--									<li class="nav-item">-->
+<!--										<a class="nav-link text-light" href="#">友情链接</a>-->
+<!--									</li>-->
+<!--								</ul>-->
+<!--							</div>-->
+<!--						</div>-->
+<!--						<div class="row">-->
+<!--							<div class="col">-->
+<!--								<ul class="nav btn-group-vertical company-info">-->
+<!--									<li class="nav-item text-white-50">-->
+<!--										公司地址：北京市朝阳区大屯路东金泉时代3-2708北京牛客科技有限公司-->
+<!--									</li>-->
+<!--									<li class="nav-item text-white-50">-->
+<!--										联系方式：010-60728802(电话)&nbsp;&nbsp;&nbsp;&nbsp;admin@nowcoder.com-->
+<!--									</li>-->
+<!--									<li class="nav-item text-white-50">-->
+<!--										牛客科技©2018 All rights reserved-->
+<!--									</li>-->
+<!--									<li class="nav-item text-white-50">-->
+<!--										京ICP备14055008号-4 &nbsp;&nbsp;&nbsp;&nbsp;-->
+<!--										<img src="http://static.nowcoder.com/company/images/res/ghs.png" style="width:18px;" />-->
+<!--										京公网安备 11010502036488号-->
+<!--									</li>-->
+<!--								</ul>-->
+<!--							</div>-->
+<!--						</div>-->
+<!--					</div>-->
+<!--				</div>-->
+<!--			</div>-->
+<!--		</footer>-->
 	</div>
 
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" crossorigin="anonymous"></script>
-	<script src="../js/global.js"></script>
+	<script th:src="@{/js/global.js}"></script>
 </body>
 </html>

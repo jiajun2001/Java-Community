@@ -1,10 +1,12 @@
 package io.github.jiajun2001.community.community.controller;
 
+import com.alibaba.fastjson.JSONObject;
 import io.github.jiajun2001.community.community.entity.Message;
 import io.github.jiajun2001.community.community.entity.Page;
 import io.github.jiajun2001.community.community.entity.User;
 import io.github.jiajun2001.community.community.service.MessageService;
 import io.github.jiajun2001.community.community.service.UserService;
+import io.github.jiajun2001.community.community.util.CommunityConstant;
 import io.github.jiajun2001.community.community.util.CommunityUtil;
 import io.github.jiajun2001.community.community.util.HostHolder;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,11 +16,12 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.util.HtmlUtils;
 
 import java.util.*;
 
 @Controller
-public class MessageController {
+public class MessageController implements CommunityConstant {
 
     @Autowired
     private MessageService messageService;
@@ -58,6 +61,10 @@ public class MessageController {
         // Get the number of unread message
         int messageUnreadCount = messageService.findMessageUnreadCount(user.getId(), null);
         model.addAttribute("messageUnreadCount", messageUnreadCount);
+
+        // Display the number of unread notifications
+        int noticeUnreadCount = messageService.findNoticeUnreadCount(user.getId(), null);
+        model.addAttribute("noticeUnreadCount", noticeUnreadCount);
 
         return "/site/letter";
     }
@@ -144,6 +151,92 @@ public class MessageController {
     public String deleteMessage(String messageId) {
         messageService.deleteMessage(Integer.parseInt(messageId));
         return CommunityUtil.getJSONString(0);
+    }
+
+    @RequestMapping(path = "/notice/list", method = RequestMethod.GET)
+    public String getNoticeList(Model model) {
+        User user = hostHolder.getUser();
+        // Get three types of the latest notification
+
+        // Get comment type notification
+        Message message = messageService.findLatestNotice(user.getId(), TOPIC_COMMENT);
+        Map<String, Object> messageVO = new HashMap<>();
+        if (message != null) {
+            messageVO.put("message", message);
+            // Handle content in the database
+            String content = HtmlUtils.htmlUnescape(message.getContent());
+            Map<String, Object> data = JSONObject.parseObject(content, HashMap.class);
+
+            messageVO.put("user", userService.findUserById((Integer) data.get("userId")));
+            messageVO.put("entityType", data.get("entityType"));
+            messageVO.put("entityId", data.get("entityId"));
+            messageVO.put("postId", data.get("postId"));
+
+            // Get the number of notifications
+            int count = messageService.findNoticeCount(user.getId(), TOPIC_COMMENT);
+            messageVO.put("count", count);
+
+            int unread = messageService.findNoticeUnreadCount(user.getId(), TOPIC_COMMENT);
+            messageVO.put("unread", unread);
+            model.addAttribute("commentNotice", messageVO);
+        }
+
+
+        // Get like type notification
+        message = messageService.findLatestNotice(user.getId(), TOPIC_LIKE);
+        messageVO = new HashMap<>();
+        if (message != null) {
+            messageVO.put("message", message);
+            // Handle content in the database
+            String content = HtmlUtils.htmlUnescape(message.getContent());
+            Map<String, Object> data = JSONObject.parseObject(content, HashMap.class);
+
+            messageVO.put("user", userService.findUserById((Integer) data.get("userId")));
+            messageVO.put("entityType", data.get("entityType"));
+            messageVO.put("entityId", data.get("entityId"));
+            messageVO.put("postId", data.get("postId"));
+
+            // Get the number of notifications
+            int count = messageService.findNoticeCount(user.getId(), TOPIC_LIKE);
+            messageVO.put("count", count);
+
+            int unread = messageService.findNoticeUnreadCount(user.getId(), TOPIC_LIKE);
+            messageVO.put("unread", unread);
+            model.addAttribute("likeNotice", messageVO);
+        }
+
+        // Get following type notification
+        message = messageService.findLatestNotice(user.getId(), TOPIC_FOLLOW);
+        messageVO = new HashMap<>();
+        if (message != null) {
+            messageVO.put("message", message);
+            // Handle content in the database
+            String content = HtmlUtils.htmlUnescape(message.getContent());
+            Map<String, Object> data = JSONObject.parseObject(content, HashMap.class);
+
+            messageVO.put("user", userService.findUserById((Integer) data.get("userId")));
+            messageVO.put("entityType", data.get("entityType"));
+            messageVO.put("entityId", data.get("entityId"));
+            messageVO.put("postId", data.get("postId"));
+
+            // Get the number of notifications
+            int count = messageService.findNoticeCount(user.getId(), TOPIC_FOLLOW);
+            messageVO.put("count", count);
+
+            int unread = messageService.findNoticeUnreadCount(user.getId(), TOPIC_FOLLOW);
+            messageVO.put("unread", unread);
+            model.addAttribute("followNotice", messageVO);
+        }
+
+        // Display the number of unread messages
+        int letterUnreadCount = messageService.findMessageUnreadCount(user.getId(), null);
+        model.addAttribute("letterUnreadCount", letterUnreadCount);
+
+        // Display the number of unread notifications
+        int noticeUnreadCount = messageService.findNoticeUnreadCount(user.getId(), null);
+        model.addAttribute("noticeUnreadCount", noticeUnreadCount);
+
+        return "/site/notice";
     }
 }
 

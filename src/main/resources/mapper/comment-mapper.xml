@@ -18,7 +18,7 @@
         where status = 0
         and entity_type = #{entityType}
         and entity_id = #{entityId}
-        order by create_time asc
+        order by create_time desc
         limit #{offset}, #{limit}
     </select>
 
